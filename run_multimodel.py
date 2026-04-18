@@ -9,7 +9,7 @@ plus a Figure 2 heatmap.
 Models:
   1. GPT-4o       (cached from prior run)
   2. Claude Sonnet (via Anthropic API)
-  3. Llama3       (via Ollama at localhost:11434)
+  3. Llama 3.2    (via Ollama at localhost:11434)
 """
 
 import csv
@@ -431,7 +431,7 @@ def main():
 
     print(f"\n{CYN}{BLD}{'='*65}")
     print(f"  RIG Pipeline -- Multi-Model Comparison")
-    print(f"  Models: GPT-4o | Claude Sonnet | Llama3")
+    print(f"  Models: GPT-4o | Claude Sonnet | Llama 3.2")
     print(f"{'='*65}{RST}\n")
 
     # Load extracted clauses (shared across all models)

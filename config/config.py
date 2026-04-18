@@ -45,7 +45,7 @@ OLLAMA_AVAILABLE = os.getenv("OLLAMA_AVAILABLE", "false").lower() == "true"
 MODELS = {
     "annotator": "claude-sonnet-4-20250514",       # Auto-annotation of obligations
     "extractor": "gpt-4o",                          # Obligation tuple extraction
-    "local": "llama3",                               # Local model via Ollama (optional)
+    "local": "llama3.2",                             # Local model via Ollama (optional)
 }
 
 # ── Sentence Transformer ────────────────────────────────────────────────────

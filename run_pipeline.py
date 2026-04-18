@@ -81,9 +81,9 @@ def check_env():
         issues.append("ANTHROPIC_API_KEY")
 
     if OLLAMA_AVAILABLE:
-        print(f"  {C.CHECK} Ollama/Llama3 available")
+        print(f"  {C.CHECK} Ollama/Llama 3.2 available")
     else:
-        print(f"  {C.DIM}  - Ollama/Llama3 not configured (optional){C.RESET}")
+        print(f"  {C.DIM}  - Ollama/Llama 3.2 not configured (optional){C.RESET}")
 
     if issues:
         print(f"\n  {C.WARN}  Missing keys: {', '.join(issues)}")

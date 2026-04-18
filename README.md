@@ -111,7 +111,7 @@ rig_pipeline/
 
 - Python ≥ 3.10
 - At least one API key: `OPENAI_API_KEY` (GPT-4o) **or** `ANTHROPIC_API_KEY` (Claude Sonnet)
-- Optional: [Ollama](https://ollama.ai) with `llama3` pulled, for the open-source benchmark column
+- Optional: [Ollama](https://ollama.ai) with `llama3.2` pulled, for the open-source benchmark column
 
 ### 5.2 Setup
 

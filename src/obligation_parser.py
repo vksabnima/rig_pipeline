@@ -4,7 +4,7 @@ Obligation Parser
 Parses obligation clauses into structured 6-tuples:
   (Subject, Obligation, Condition, Threshold, Deadline, Exception)
 
-Uses GPT-4o via OpenAI API, with optional Ollama/Llama3 fallback.
+Uses GPT-4o via OpenAI API, with optional Ollama/Llama 3.2 fallback.
 """
 
 import json
