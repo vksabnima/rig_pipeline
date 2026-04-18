@@ -7,3 +7,9 @@ outputs/
 __pycache__/
 *.pyc
 .DS_Store
+
+# Manuscript drafts and derived artifacts — keep local only
+*.pdf
+paper_extracted.txt
+*.docx
+*.tex.bak
