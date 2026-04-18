@@ -1,0 +1,27 @@
+# ============================================================================
+# RIG Pipeline — Python Dependencies
+# ============================================================================
+# Install: pip install -r requirements.txt
+# ============================================================================
+
+# PDF processing
+pdfplumber>=0.10.0
+
+# LLM APIs
+openai>=1.30.0
+anthropic>=0.28.0
+
+# Graph construction & analysis
+networkx>=3.2
+
+# Embeddings & NLP
+sentence-transformers>=3.0.0
+numpy>=1.26.0
+
+# Environment & utilities
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# Optional: for visualization
+# matplotlib>=3.8.0
+# pyvis>=0.3.2

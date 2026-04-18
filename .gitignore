@@ -1,0 +1,9 @@
+.env
+data/raw/*.pdf
+data/processed/
+data/annotations/
+data/graphs/
+outputs/
+__pycache__/
+*.pyc
+.DS_Store
