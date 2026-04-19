@@ -1,0 +1,3 @@
+failure_type,count,percentage,mean_rif,example_clause_id
+CROSS_REFERENCE,27,90.0,0.0,OBL-0001
+IMPLICIT_SUBJECT,3,10.0,0.0,OBL-0006

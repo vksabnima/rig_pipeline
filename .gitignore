@@ -1,9 +1,5 @@
 .env
 data/raw/*.pdf
-data/processed/
-data/annotations/
-data/graphs/
-outputs/
 __pycache__/
 *.pyc
 .DS_Store
@@ -13,3 +9,7 @@ __pycache__/
 paper_extracted.txt
 *.docx
 *.tex.bak
+
+# Run logs and temp helpers
+*.log
+_*.txt

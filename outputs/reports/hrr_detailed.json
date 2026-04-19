@@ -1,0 +1,365 @@
+{
+  "gpt-4o": {
+    "HRR_detection": 1.0,
+    "HRR_stability": 0.2029,
+    "detection_details": {
+      "hrr_detection": 1.0,
+      "correct_rejections": 15,
+      "total_baits": 15,
+      "details": [
+        {
+          "bait_idx": 0,
+          "obligation_present": false,
+          "confidence": 0.95,
+          "correct_rejection": true,
+          "bait_snippet": "The Basel Committee on Banking Supervision was established in 1974 by the centra"
+        },
+        {
+          "bait_idx": 1,
+          "obligation_present": false,
+          "confidence": 0.95,
+          "correct_rejection": true,
+          "bait_snippet": "This section provides an overview of the regulatory framework and its historical"
+        },
+        {
+          "bait_idx": 2,
+          "obligation_present": false,
+          "confidence": 0.95,
+          "correct_rejection": true,
+          "bait_snippet": "Market participants have expressed a range of views on the proposed amendments d"
+        },
+        {
+          "bait_idx": 3,
+          "obligation_present": false,
+          "confidence": 0.95,
+          "correct_rejection": true,
+          "bait_snippet": "The standardised approach calculates risk-weighted assets by assigning exposures"
+        },
+        {
+          "bait_idx": 4,
+          "obligation_present": false,
+          "confidence": 0.95,
+          "correct_rejection": true,
+          "bait_snippet": "Several commenters noted that the existing framework already addresses many of t"
+        },
+        {
+          "bait_idx": 5,
+          "obligation_present": false,
+          "confidence": 0.95,
+          "correct_rejection": true,
+          "bait_snippet": "In the view of the Commission, the current regulatory environment is conducive t"
+        },
+        {
+          "bait_idx": 6,
+          "obligation_present": false,
+          "confidence": 0.95,
+          "correct_rejection": true,
+          "bait_snippet": "Industry stakeholders have generally supported the direction of reform, while no"
+        },
+        {
+          "bait_idx": 7,
+          "obligation_present": false,
+          "confidence": 0.95,
+          "correct_rejection": true,
+          "bait_snippet": "The impact assessment suggests that smaller institutions may face proportionally"
+        },
+        {
+          "bait_idx": 8,
+          "obligation_present": false,
+          "confidence": 0.95,
+          "correct_rejection": true,
+          "bait_snippet": "The Committee encourages national supervisors to share best practices in the imp"
+        },
+        {
+          "bait_idx": 9,
+          "obligation_present": false,
+          "confidence": 0.95,
+          "correct_rejection": true,
+          "bait_snippet": "Firms are invited to consider whether additional voluntary measures might furthe"
+        },
+        {
+          "bait_idx": 10,
+          "obligation_present": false,
+          "confidence": 0.95,
+          "correct_rejection": true,
+          "bait_snippet": "The quarterly report on economic trends was published in March 2024 and is avail"
+        },
+        {
+          "bait_idx": 11,
+          "obligation_present": false,
+          "confidence": 0.95,
+          "correct_rejection": true,
+          "bait_snippet": "Annual conference attendance has grown by 15% over the past three years, reflect"
+        },
+        {
+          "bait_idx": 12,
+          "obligation_present": false,
+          "confidence": 0.95,
+          "correct_rejection": true,
+          "bait_snippet": "Previous versions of this regulation had required annual reporting, but that pro"
+        },
+        {
+          "bait_idx": 13,
+          "obligation_present": false,
+          "confidence": 0.95,
+          "correct_rejection": true,
+          "bait_snippet": "Some jurisdictions may choose to implement stricter requirements, although this "
+        },
+        {
+          "bait_idx": 14,
+          "obligation_present": false,
+          "confidence": 0.95,
+          "correct_rejection": true,
+          "bait_snippet": "The working group discussed whether institutions should be required to submit qu"
+        }
+      ]
+    },
+    "stability_details": {
+      "hrr_stability": 0.2029,
+      "stable": 14,
+      "total_tests": 69
+    }
+  },
+  "claude-sonnet": {
+    "HRR_detection": 1.0,
+    "HRR_stability": 0.1754,
+    "detection_details": {
+      "hrr_detection": 1.0,
+      "correct_rejections": 15,
+      "total_baits": 15,
+      "details": [
+        {
+          "bait_idx": 0,
+          "obligation_present": false,
+          "confidence": 0.95,
+          "correct_rejection": true,
+          "bait_snippet": "The Basel Committee on Banking Supervision was established in 1974 by the centra"
+        },
+        {
+          "bait_idx": 1,
+          "obligation_present": false,
+          "confidence": 0.95,
+          "correct_rejection": true,
+          "bait_snippet": "This section provides an overview of the regulatory framework and its historical"
+        },
+        {
+          "bait_idx": 2,
+          "obligation_present": false,
+          "confidence": 0.95,
+          "correct_rejection": true,
+          "bait_snippet": "Market participants have expressed a range of views on the proposed amendments d"
+        },
+        {
+          "bait_idx": 3,
+          "obligation_present": false,
+          "confidence": 0.9,
+          "correct_rejection": true,
+          "bait_snippet": "The standardised approach calculates risk-weighted assets by assigning exposures"
+        },
+        {
+          "bait_idx": 4,
+          "obligation_present": false,
+          "confidence": 0.95,
+          "correct_rejection": true,
+          "bait_snippet": "Several commenters noted that the existing framework already addresses many of t"
+        },
+        {
+          "bait_idx": 5,
+          "obligation_present": false,
+          "confidence": 0.95,
+          "correct_rejection": true,
+          "bait_snippet": "In the view of the Commission, the current regulatory environment is conducive t"
+        },
+        {
+          "bait_idx": 6,
+          "obligation_present": false,
+          "confidence": 0.95,
+          "correct_rejection": true,
+          "bait_snippet": "Industry stakeholders have generally supported the direction of reform, while no"
+        },
+        {
+          "bait_idx": 7,
+          "obligation_present": false,
+          "confidence": 0.95,
+          "correct_rejection": true,
+          "bait_snippet": "The impact assessment suggests that smaller institutions may face proportionally"
+        },
+        {
+          "bait_idx": 8,
+          "obligation_present": false,
+          "confidence": 0.9,
+          "correct_rejection": true,
+          "bait_snippet": "The Committee encourages national supervisors to share best practices in the imp"
+        },
+        {
+          "bait_idx": 9,
+          "obligation_present": false,
+          "confidence": 0.95,
+          "correct_rejection": true,
+          "bait_snippet": "Firms are invited to consider whether additional voluntary measures might furthe"
+        },
+        {
+          "bait_idx": 10,
+          "obligation_present": false,
+          "confidence": 0.95,
+          "correct_rejection": true,
+          "bait_snippet": "The quarterly report on economic trends was published in March 2024 and is avail"
+        },
+        {
+          "bait_idx": 11,
+          "obligation_present": false,
+          "confidence": 0.95,
+          "correct_rejection": true,
+          "bait_snippet": "Annual conference attendance has grown by 15% over the past three years, reflect"
+        },
+        {
+          "bait_idx": 12,
+          "obligation_present": false,
+          "confidence": 0.95,
+          "correct_rejection": true,
+          "bait_snippet": "Previous versions of this regulation had required annual reporting, but that pro"
+        },
+        {
+          "bait_idx": 13,
+          "obligation_present": false,
+          "confidence": 0.95,
+          "correct_rejection": true,
+          "bait_snippet": "Some jurisdictions may choose to implement stricter requirements, although this "
+        },
+        {
+          "bait_idx": 14,
+          "obligation_present": false,
+          "confidence": 0.9,
+          "correct_rejection": true,
+          "bait_snippet": "The working group discussed whether institutions should be required to submit qu"
+        }
+      ]
+    },
+    "stability_details": {
+      "hrr_stability": 0.1754,
+      "stable": 10,
+      "total_tests": 57
+    }
+  },
+  "llama3.2": {
+    "HRR_detection": 1.0,
+    "HRR_stability": 0.4127,
+    "detection_details": {
+      "hrr_detection": 1.0,
+      "correct_rejections": 15,
+      "total_baits": 15,
+      "details": [
+        {
+          "bait_idx": 0,
+          "obligation_present": false,
+          "confidence": 0.05,
+          "correct_rejection": true,
+          "bait_snippet": "The Basel Committee on Banking Supervision was established in 1974 by the centra"
+        },
+        {
+          "bait_idx": 1,
+          "obligation_present": false,
+          "confidence": 0.05,
+          "correct_rejection": true,
+          "bait_snippet": "This section provides an overview of the regulatory framework and its historical"
+        },
+        {
+          "bait_idx": 2,
+          "obligation_present": false,
+          "confidence": 0.2,
+          "correct_rejection": true,
+          "bait_snippet": "Market participants have expressed a range of views on the proposed amendments d"
+        },
+        {
+          "bait_idx": 3,
+          "obligation_present": false,
+          "confidence": 0.2,
+          "correct_rejection": true,
+          "bait_snippet": "The standardised approach calculates risk-weighted assets by assigning exposures"
+        },
+        {
+          "bait_idx": 4,
+          "obligation_present": false,
+          "confidence": 0.8,
+          "correct_rejection": true,
+          "bait_snippet": "Several commenters noted that the existing framework already addresses many of t"
+        },
+        {
+          "bait_idx": 5,
+          "obligation_present": false,
+          "confidence": 0.2,
+          "correct_rejection": true,
+          "bait_snippet": "In the view of the Commission, the current regulatory environment is conducive t"
+        },
+        {
+          "bait_idx": 6,
+          "obligation_present": false,
+          "confidence": 0.2,
+          "correct_rejection": true,
+          "bait_snippet": "Industry stakeholders have generally supported the direction of reform, while no"
+        },
+        {
+          "bait_idx": 7,
+          "obligation_present": false,
+          "confidence": 0.2,
+          "correct_rejection": true,
+          "bait_snippet": "The impact assessment suggests that smaller institutions may face proportionally"
+        },
+        {
+          "bait_idx": 8,
+          "obligation_present": false,
+          "confidence": 0.2,
+          "correct_rejection": true,
+          "bait_snippet": "The Committee encourages national supervisors to share best practices in the imp"
+        },
+        {
+          "bait_idx": 9,
+          "obligation_present": false,
+          "confidence": 0.05,
+          "correct_rejection": true,
+          "bait_snippet": "Firms are invited to consider whether additional voluntary measures might furthe"
+        },
+        {
+          "bait_idx": 10,
+          "obligation_present": false,
+          "confidence": 0.2,
+          "correct_rejection": true,
+          "bait_snippet": "The quarterly report on economic trends was published in March 2024 and is avail"
+        },
+        {
+          "bait_idx": 11,
+          "obligation_present": false,
+          "confidence": 0.5,
+          "correct_rejection": true,
+          "bait_snippet": "Annual conference attendance has grown by 15% over the past three years, reflect"
+        },
+        {
+          "bait_idx": 12,
+          "obligation_present": false,
+          "confidence": 0.8,
+          "correct_rejection": true,
+          "bait_snippet": "Previous versions of this regulation had required annual reporting, but that pro"
+        },
+        {
+          "bait_idx": 13,
+          "obligation_present": false,
+          "confidence": 0.2,
+          "correct_rejection": true,
+          "bait_snippet": "Some jurisdictions may choose to implement stricter requirements, although this "
+        },
+        {
+          "bait_idx": 14,
+          "obligation_present": false,
+          "confidence": 0.2,
+          "correct_rejection": true,
+          "bait_snippet": "The working group discussed whether institutions should be required to submit qu"
+        }
+      ]
+    },
+    "stability_details": {
+      "hrr_stability": 0.4127,
+      "stable": 26,
+      "total_tests": 63
+    }
+  }
+}

@@ -1,0 +1,961 @@
+[
+  {
+    "original_clause_id": "OBL-0552",
+    "original_text": "By explicitly requiring broker-dealers to establish, maintain, and enforce written policies\nand procedures reasonably designed to eliminate certain practices, we believe we are responding\nto commenters who requested certainty as to which specific incentives are prohibited.799 Also in\nresponse to commenters requesting clarification as to what practices would be permitted, the\nrequirement to have reasonably designed written policies and procedures to eliminate sales\ncontests, sales quotas, bonuses, and non-cash compensation applies only to those that are based\non the sales of specific securities or types of securities, and does not apply to compensation\npractices based on, for example, total products sold, or asset growth or accumulation,800 and\ncustomer satisfaction.",
+    "text": "By explicitly requiring broker-dealers to establish, maintain, and enforce written policies\nand procedures reasonably designed to eliminate certain practices, we believe we are responding\nto commenters who requested certainty as to which specific incentives are not permitted.799 Also in\nresponse to commenters requesting clarification as to what practices would be permitted, the\nstipulation to have reasonably designed written policies and procedures to eliminate sales\ncontests, sales quotas, bonuses, and non-cash compensation applies only to those that are based\non the sales of specific securities or types of securities, and does not apply to compensation\npractices based on, for example, total products sold, or asset growth or accumulation,800 and\ninvestor satisfaction.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "prohibited -> not permitted",
+      "requirement -> stipulation",
+      "customer -> investor"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0229",
+    "original_text": "In calculating RWA and EL amounts for\nthe counterparty credit risk arising from the set of transactions covered by the master netting agreement,\nE* must be used as the EAD of the counterparty and the LGD of the counterparty must be determined\nusing the LGD specified for unsecured exposures, as set out in paragraphs 70 and 71.",
+    "text": "In calculating RWA and EL amounts for\nthe counterparty credit vulnerability arising from the set of transactions covered by the master netting agreement,\nE* shall be used as the EAD of the counterparty and the LGD of the counterparty must be determined\nusing the LGD specified for unsecured exposures, as set out in paragraphs 70 and 71.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "must -> shall",
+      "risk -> vulnerability"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0052",
+    "original_text": "The calculation must be done on the portfolio\nof retail exposures that meet the product and orientation criteria as well as the low value of the exposure.",
+    "text": "The calculation is obligated to be done on the portfolio\nof retail exposures that meet the product and orientation criteria as well as the low value of the exposure.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "must -> is obligated to"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0761",
+    "original_text": "To the extent that the Disclosure Obligation raises the salience of variables that may facilitate\ncomparison across broker-dealers and investment advisers, Regulation Best Interest may\nencourage competition between broker-dealers and investment advisers.",
+    "text": "To the extent that the Disclosure Obligation raises the salience of variables that may facilitate\ncomparison across broker-dealers and investment advisers, Regulation Best Interest may\nencourage competition between broker-dealers and investment advisers.",
+    "perturbation": "synonym_swap",
+    "changes": [],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0564",
+    "original_text": "Where realised values continue to be higher than expected values, banks must revise\nestimates upward to reflect their default and loss experience.",
+    "text": "Where realised values continue to be higher than expected values, banks is required to revise\nestimates upward to reflect their default and loss experience.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "must -> is required to"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0502",
+    "original_text": "Across facility types, a bank must review its estimates of EAD when material new\ninformation comes to light and at least on an annual basis.",
+    "text": "Across facility types, a financial entity shall review its estimates of EAD when material new\ninformation comes to light and at least on an annual basis.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "must -> shall",
+      "bank -> financial entity"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0458",
+    "original_text": "The bank\u2019s own workout and collection expertise significantly influences their recovery rates and\nmust be reflected in their LGD estimates, but adjustments to estimates for such expertise must be\nconservative until the bank has sufficient internal empirical evidence of the impact of its expertise.",
+    "text": "The credit institution\u2019s own workout and collection expertise significantly influences their recovery rates and\nshall be reflected in their LGD estimates, but adjustments to estimates for such expertise must be\nconservative until the bank has sufficient internal empirical evidence of the impact of its expertise.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "must -> shall",
+      "bank -> credit institution"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0286",
+    "original_text": "To be eligible for the IRB approach a bank must demonstrate to its supervisor that it meets certain\nminimum requirements at the outset and on an ongoing basis.",
+    "text": "To be eligible for the IRB approach a credit institution is obligated to demonstrate to its supervisor that it meets certain\nminimum requirements at the outset and on an ongoing basis.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "must -> is obligated to",
+      "bank -> credit institution"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0751",
+    "original_text": "The Conflict of Interest Obligation also requires broker-dealers to implement policies and\nprocedures to reduce the effect of conflicts of interest and securities menu limitations on\nrecommendations to retail customers.",
+    "text": "The Conflict of Interest Obligation also requires broker-dealers to implement policies and\nprocedures to reduce the effect of conflicts of interest and securities menu limitations on\nrecommendations to retail customers.",
+    "perturbation": "synonym_swap",
+    "changes": [],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0210",
+    "original_text": "Banks that do not meet the requirements for the estimation of PD under the corporate foundation\napproach for their SL exposures are required to map their internal risk grades to five supervisory\ncategories, each of which is associated with a specific risk weight.",
+    "text": "Banks that do not meet the requirements for the estimation of PD under the corporate foundation\napproach for their SL exposures are required to map their internal vulnerability grades to five supervisory\ncategories, each of which is associated with a specific risk weight.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "risk -> vulnerability"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0628",
+    "original_text": "548\ninclude the time spent documenting such disclosures, the development of systems and processes\nnecessary to document such disclosures, training associated persons to use these systems and\nprocesses, and supervising the compliance by associated persons with this obligation.",
+    "text": "548\ninclude the time spent documenting such disclosures, the development of systems and processes\nnecessary to document such disclosures, training associated persons to use these systems and\nprocesses, and supervising the compliance by associated persons with this obligation.",
+    "perturbation": "synonym_swap",
+    "changes": [],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0759",
+    "original_text": "The Disclosure Obligation may also encourage competition for retail customers across\nbroker-dealers and investment advisers.",
+    "text": "The Disclosure Obligation may also encourage competition for retail customers across\nbroker-dealers and investment advisers.",
+    "perturbation": "synonym_swap",
+    "changes": [],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0359",
+    "original_text": "Plain English\nIn the Proposing Release, we stated that broker-dealers should apply plain English\nprinciples to written disclosures including, among other things, the use of short sentences and\nactive voice, and avoidance of legal jargon, highly technical business terms, or multiple\n509 See Section II.C.1, Disclosure Obligation, Oral Disclosure or Disclosure After a\nRecommendation.",
+    "text": "Plain English\nIn the Proposing Release, we stated that broker-dealers should apply plain English\nprinciples to written disclosures including, among other things, the use of short sentences and\nactive voice, and avoidance of legal jargon, highly technical business terms, or multiple\n509 See Section II.C.1, Disclosure Obligation, Oral Disclosure or Disclosure After a\nRecommendation.",
+    "perturbation": "synonym_swap",
+    "changes": [],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0179",
+    "original_text": "Where the credit protection is denominated in a currency different from that in which the\nexposure is denominated \u2013 ie there is a currency mismatch \u2013 the amount of the exposure deemed to be\nprotected must be reduced by the application of a haircut H FX, ie\n( )\nG =G\u22c5 1\u2212H\nA FX\nwhere:\nG = nominal amount of the credit protection\nH = haircut appropriate for currency mismatch between the credit protection and underlying\nFX\nobligation.",
+    "text": "Where the credit protection is denominated in a currency different from that in which the\nexposure is denominated \u2013 ie there is a currency mismatch \u2013 the amount of the exposure deemed to be\nprotected is obligated to be reduced by the application of a haircut H FX, ie\n( )\nG =G\u22c5 1\u2212H\nA FX\nwhere:\nG = nominal amount of the credit protection\nH = haircut appropriate for currency mismatch between the credit protection and underlying\nFX\nobligation.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "must -> is obligated to"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0452",
+    "original_text": "633 See LPL August 2018 Letter (recommending that the Commission clarify that a financial\nprofessional can satisfy his or her obligations under Regulation Best Interest, even if he\nor she limits recommendations to a smaller number of product sponsors because financial\nprofessionals participating on large platforms may, in practice, be discouraged from\nconducting focused analysis of product offerings, instead opting for a more cursory\nreview of a few high-level cost, risk, and performance metrics across all available\n281\nwhether the consideration of \u201creasonably available alternatives\u201d would effectively require a\nbroker-dealer to document the basis of any recommendation, as well as concerns about\ndisclosure\u2019s role in satisfying the Care Obligation.634 Finally, a majority of the IAC and other\ncommenters sought clarification on whether broker-dealers were required to recommend only the\nsingle \u201cbest\u201d product.635\nThe Care Obligation will require a broker-dealer to have a reasonable basis to believe,\nbased on its understanding of the potential risks, rewards, and costs of the recommended security\nor investment strategy involving securities, and in light of the retail customer\u2019s investment\nprofile, that the recommendation is in the best interest of a particular retail customer and does\nnot place the broker-dealer\u2019s interest ahead of the retail customer\u2019s interest.",
+    "text": "633 See LPL August 2018 Letter (recommending that the Commission clarify that a financial\nprofessional can satisfy his or her obligations under Regulation Best Interest, even if he\nor she limits recommendations to a smaller number of product sponsors because financial\nprofessionals participating on large platforms may, in practice, be discouraged from\nconducting focused analysis of product offerings, instead opting for a more cursory\nreview of a few high-level cost, vulnerability, and performance metrics across all available\n281\nwhether the consideration of \u201creasonably available alternatives\u201d would effectively require a\nbroker-dealer to document the basis of any recommendation, as well as concerns about\ndisclosure\u2019s role in satisfying the Care Obligation.634 Finally, a majority of the IAC and other\ncommenters sought clarification on whether broker-dealers were required to recommend only the\nsingle \u201cbest\u201d product.635\nThe Care Obligation will require a broker-dealer to have a reasonable basis to believe,\nbased on its understanding of the potential risks, rewards, and costs of the recommended security\nor investment strategy involving securities, and in light of the retail client\u2019s investment\nprofile, that the recommendation is in the best interest of a particular retail customer and does\nnot place the broker-dealer\u2019s interest ahead of the retail customer\u2019s interest.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "risk -> vulnerability",
+      "customer -> client"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0107",
+    "original_text": "Nevertheless, because of the differences in the approach to the treatment of\nconflicts under ERISA and under the federal securities laws\u2014ERISA starts by prohibiting\nconflicts and then through exemptions permits certain conflicts, whereas the federal securities\nlaws generally start with disclosure and become more restrictive\u2014we share commenters\u2019\ncompensation, or other standard compensation, for the sale of securities shall not, in and\nof itself, violate any uniform fiduciary standard promulgated under that subsection\u2019s\nauthority as applied to a broker-dealer.",
+    "text": "Nevertheless, because of the differences in the approach to the treatment of\nconflicts under ERISA and under the federal securities laws\u2014ERISA starts by prohibiting\nconflicts and then through exemptions permits certain conflicts, whereas the federal securities\nlaws generally start with disclosure and become more restrictive\u2014we share commenters\u2019\ncompensation, or other standard compensation, for the sale of securities will not, in and\nof itself, violate any uniform fiduciary standard promulgated under that subsection\u2019s\nauthority as applied to a broker-dealer.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "shall -> will"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0066",
+    "original_text": "Underwriting policies must define a metric(s) (such as the loan\u2019s debt service coverage ratio) and specify\nits (their) corresponding relevant level(s) to conduct such assessment.36 Underwriting policies must also\nbe appropriate when the repayment of the mortgage loan depends materially on the cash flows generated\nby the property, including relevant metrics (such as an occupancy rate of the property).",
+    "text": "Underwriting policies shall define a metric(s) (such as the loan\u2019s debt service coverage ratio) and specify\nits (their) corresponding relevant level(s) to conduct such assessment.36 Underwriting policies must also\nbe appropriate when the repayment of the mortgage loan depends materially on the cash flows generated\nby the property, including relevant metrics (such as an occupancy rate of the property).",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "must -> shall"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0062",
+    "original_text": "(iii) the guarantor shall establish a fully-funded mutual guarantee fund or equivalent protection for insurance undertakings\nto absorb credit risk losses, whose calibration shall be periodically reviewed by its supervisors and subject to periodic\nstress testing;",
+    "text": "(iii) the guarantor is required to establish a fully-funded mutual guarantee fund or equivalent protection for insurance undertakings\nto absorb credit exposure losses, whose calibration shall be periodically reviewed by its supervisors and subject to periodic\nstress testing;",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "shall -> must",
+      "must -> is required to",
+      "risk -> exposure"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0192",
+    "original_text": "The exposure must be one of a large pool of exposures, which are managed by the bank on a\npooled basis.",
+    "text": "The exposure is obligated to be one of a large pool of exposures, which are managed by the institution on a\npooled basis.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "must -> is obligated to",
+      "bank -> institution"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0448",
+    "original_text": "Basel III: Finalising post-crisis reforms 93\nestimates beyond the date of implementation of this Framework must be consistent with the reference\ndefinition.",
+    "text": "Basel III: Finalising post-crisis reforms 93\nestimates beyond the date of implementation of this Framework shall be consistent with the reference\ndefinition.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "must -> shall"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0477",
+    "original_text": "If the available observation spans a longer period for any source,\nand these data are relevant, this longer period must be used.",
+    "text": "If the available observation spans a longer period for any source,\nand these data are relevant, this longer period shall be used.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "must -> shall"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0277",
+    "original_text": "Standard of Conduct415\nAs stated in the Proposing Release, the Commission intended the Relationship Summary\nto touch on issues that are also contemplated under the Disclosure Obligation, such as facilitating\ngreater awareness of key aspects of a relationship with a firm or financial professional, such as\nthe applicable standard of conduct.416 Several commenters on Regulation Best Interest also\nrequested that the Commission treat the standard of conduct applicable to a broker-dealer making\nthe recommendation to its retail customer as a \u201cmaterial fact relating to the scope and terms of\nthe relationship\u201d that would likely need to be disclosed prior to, or at the time of the\n415 See Section II.C.1.a, Disclosure Obligation, Capacity in Which the Broker-Dealer is\nActing.",
+    "text": "Standard of Conduct415\nAs stated in the Proposing Release, the Commission intended the Relationship Summary\nto touch on issues that are also contemplated under the Disclosure Obligation, such as facilitating\ngreater awareness of key aspects of a relationship with a firm or financial professional, such as\nthe applicable standard of conduct.416 Several commenters on Regulation Best Interest also\nrequested that the Commission treat the standard of conduct applicable to a broker-dealer making\nthe recommendation to its retail investor as a \u201cmaterial fact relating to the scope and terms of\nthe relationship\u201d that would likely need to be disclosed prior to, or at the time of the\n415 See Section II.C.1.a, Disclosure Obligation, Capacity in Which the Broker-Dealer is\nActing.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "customer -> investor"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0475",
+    "original_text": "As noted in the Proposing\nRelease, we believe that imposing the quantitative care obligation without a \u201ccontrol\u201d element\nwould provide consistency in the investor protections provided to retail customers by requiring a\nbroker-dealer to always form a reasonable basis as to the recommended frequency of trading in a\nretail customer\u2019s account\u2014irrespective of whether the broker-dealer \u201ccontrols\u201d or exercises \u201cde\nfacto control\u201d over the retail customer\u2019s account.661 This would also be consistent with the other\ncomponents of the Care Obligation, which apply regardless of whether a broker-dealer\n\u201ccontrols\u201d or exercises \u201cde facto control\u201d over the retail customers\u2019 account.",
+    "text": "As noted in the Proposing\nRelease, we believe that imposing the quantitative care obligation without a \u201ccontrol\u201d element\nwould provide consistency in the investor protections provided to retail customers by requiring a\nbroker-dealer to always form a reasonable basis as to the recommended frequency of trading in a\nretail investor\u2019s account\u2014irrespective of whether the broker-dealer \u201ccontrols\u201d or exercises \u201cde\nfacto control\u201d over the retail customer\u2019s account.661 This would also be consistent with the other\ncomponents of the Care Obligation, which apply regardless of whether a broker-dealer\n\u201ccontrols\u201d or exercises \u201cde facto control\u201d over the retail customers\u2019 account.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "customer -> investor"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0055",
+    "original_text": "The collateral agreement and the legal process underpinning it must be such that\nthey provide for the bank to realise the value of the property within a reasonable time frame.",
+    "text": "The collateral agreement and the legal process underpinning it is obligated to be such that\nthey provide for the credit institution to realise the value of the property within a reasonable time frame.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "must -> is obligated to",
+      "bank -> credit institution"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0392",
+    "original_text": "Care Obligation\nWe proposed the Care Obligation to require a broker-dealer, when making a\nrecommendation of any securities transaction or investment strategy involving securities to a\nretail customer, to exercise reasonable diligence, care, skill, and prudence to: (1) understand the\npotential risks and rewards associated with the recommendation, and have a reasonable basis to\nbelieve that the recommendation could be in the best interest of at least some retail customers;",
+    "text": "Care Obligation\nWe proposed the Care Obligation to require a broker-dealer, when making a\nrecommendation of any securities transaction or investment strategy involving securities to a\nretail investor, to exercise reasonable diligence, care, skill, and prudence to: (1) understand the\npotential risks and rewards associated with the recommendation, and have a reasonable basis to\nbelieve that the recommendation could be in the best interest of at least some retail customers;",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "customer -> investor"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0408",
+    "original_text": "Changes to the rating\nprocess, criteria or individual rating parameters must be documented and retained for supervisors\nto review.",
+    "text": "Changes to the rating\nprocess, criteria or individual rating parameters shall be documented and retained for supervisors\nto review.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "must -> shall"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0709",
+    "original_text": "It is possible that complying with the Conflict of Interest Obligation in this manner may\nresult in securities menus that limit an associated person\u2019s choices of investments when\nproviding a recommendation to a retail customer.1281 However, as discussed below, the\nrequirements of the Conflict of Interest Obligation and the Care Obligation are intended to\n1281 See supra Section II.C.2.",
+    "text": "It is possible that complying with the Conflict of Interest Obligation in this manner may\nresult in securities menus that limit an associated person\u2019s choices of investments when\nproviding a recommendation to a retail investor.1281 However, as discussed below, the\nrequirements of the Conflict of Interest Obligation and the Care Obligation are intended to\n1281 See supra Section II.C.2.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "customer -> investor"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0573",
+    "original_text": "Finally, the Commission staff intends to offer firms significant assistance and support\nduring the transition period and thereafter with the aim of helping to ensure that the investor\nprotections and other benefits of the final rule are implemented in an efficient and effective\nmanner.",
+    "text": "Finally, the Commission staff intends to offer firms significant assistance and support\nduring the transition period and thereafter with the aim of helping to make certain that the investor\nprotections and other benefits of the final rule are implemented in an efficient and effective\nmanner.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "ensure -> make certain"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0679",
+    "original_text": "The Conflict of Interest Obligation is intended to reduce the information asymmetry\nbetween a retail customer and a broker-dealer and its associated persons with respect to the\nbroker-dealer\u2019s conflicts of interest or those of its associated persons that may have an effect on\nthe recommendations provided to the retail customer.",
+    "text": "The Conflict of Interest Obligation is intended to reduce the information asymmetry\nbetween a retail client and a broker-dealer and its associated persons with respect to the\nbroker-dealer\u2019s conflicts of interest or those of its associated persons that may have an effect on\nthe recommendations provided to the retail customer.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "customer -> client"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0102",
+    "original_text": "It also\nincludes a requirement under the Care Obligation to specifically address the risk that a broker-\ndealer\u2019s transaction-based recommendations and compensation could result in a series of\nrecommendations that are not in the best interest or a retail customer\u2014a \u201cchurning\u201d risk unique\nto the broker-dealer model of providing recommendations and resulting transaction-based\ncompensation.",
+    "text": "It also\nincludes a stipulation under the Care Obligation to specifically address the hazard that a broker-\ndealer\u2019s transaction-based recommendations and compensation could result in a series of\nrecommendations that are not in the best interest or a retail counterparty\u2014a \u201cchurning\u201d risk unique\nto the broker-dealer model of providing recommendations and resulting transaction-based\ncompensation.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "requirement -> stipulation",
+      "risk -> hazard",
+      "customer -> counterparty"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0452",
+    "original_text": "These policies must be\napplied consistently over time, and must support the \u2018use test\u2019 (ie if a bank treats a re-aged exposure in a\nsimilar fashion to other delinquent exposures more than the past-due cut off point, this exposure must be\nrecorded as in default for IRB purposes).",
+    "text": "These policies is required to be\napplied consistently over time, and must support the \u2018use test\u2019 (ie if a credit institution treats a re-aged exposure in a\nsimilar fashion to other delinquent exposures more than the past-due cut off point, this exposure must be\nrecorded as in default for IRB purposes).",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "must -> is required to",
+      "bank -> credit institution"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0162",
+    "original_text": "As stated in the Proposing Release, we understand that broker-dealers typically provide\ninformation about their services and accounts, which may include disclosures concerning the\nbroker-dealer\u2019s capacity, fees, services, and conflicts, on their firm websites and in their account\n130\nopening agreements.285 Furthermore, while broker-dealers are subject to a number of specific\ndisclosure obligations when they effect certain customer transactions, and are subject to the\nantifraud provisions of the federal securities laws, broker-dealers are not currently subject to an\nexplicit and broad disclosure requirement under the Exchange Act regarding the scope and terms\nof the broker-dealer relationship.286 To promote broker-dealer recommendations that are in the\nbest interest of retail customers, we determined it was necessary to impose a more explicit and\nbroader disclosure obligation on broker-dealers than that which currently exists under the federal\nsecurities laws and SRO rules.287\nWe solicited comment on the Disclosure Obligation and commenters addressed several\naspects of this proposed obligation, including the interpretation of each required element, as\ndiscussed in the relevant sections below.288 In consideration of these comments, we are revising\nthe Disclosure Obligation to require a broker-dealer, prior to or at the time of the\nrecommendation, to provide to the retail customer, in writing, full and fair disclosure289 of all\nmaterial facts related to the scope and terms of the relationship with the retail customer and all\n285 Proposing Release at 21599.",
+    "text": "As stated in the Proposing Release, we understand that broker-dealers typically provide\ninformation about their services and accounts, which may include disclosures concerning the\nbroker-dealer\u2019s capacity, fees, services, and conflicts, on their firm websites and in their account\n130\nopening agreements.285 Furthermore, while broker-dealers are subject to a number of specific\ndisclosure obligations when they effect certain counterparty transactions, and are subject to the\nantifraud provisions of the federal securities laws, broker-dealers are not currently subject to an\nexplicit and broad disclosure obligation under the Exchange Act regarding the scope and terms\nof the broker-dealer relationship.286 To promote broker-dealer recommendations that are in the\nbest interest of retail customers, we determined it was necessary to impose a more explicit and\nbroader disclosure obligation on broker-dealers than that which currently exists under the federal\nsecurities laws and SRO rules.287\nWe solicited comment on the Disclosure Obligation and commenters addressed several\naspects of this proposed obligation, including the interpretation of each required element, as\ndiscussed in the relevant sections below.288 In consideration of these comments, we are revising\nthe Disclosure Obligation to require a broker-dealer, prior to or at the time of the\nrecommendation, to provide to the retail customer, in writing, full and fair disclosure289 of all\nmaterial facts related to the scope and terms of the relationship with the retail customer and all\n285 Proposing Release at 21599.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "requirement -> obligation",
+      "customer -> counterparty"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0449",
+    "original_text": "Further, the Proposing Release indicated that\nunder the Care Obligation, when a broker-dealer recommends a more expensive security or\ninvestment strategy over another reasonably available alternative offered by the broker-dealer,\nthe broker dealer would need to have a reasonable basis to believe that the higher cost is justified\n(and thus nevertheless is in the retail customer\u2019s best interest) based on other factors (e.g., the\nproduct\u2019s or strategy\u2019s investment objectives, characteristics (including any special or unusual\nfeatures), liquidity, risks and potential benefits, volatility and likely performance in a variety of\n626 Id.",
+    "text": "Further, the Proposing Release indicated that\nunder the Care Obligation, when a broker-dealer recommends a more expensive security or\ninvestment strategy over another reasonably available alternative offered by the broker-dealer,\nthe broker dealer would need to have a reasonable basis to believe that the higher cost is justified\n(and thus nevertheless is in the retail counterparty\u2019s best interest) based on other factors (e.g., the\nproduct\u2019s or strategy\u2019s investment objectives, characteristics (including any special or unusual\nfeatures), liquidity, risks and potential benefits, volatility and likely performance in a variety of\n626 Id.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "customer -> counterparty"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0570",
+    "original_text": "Furthermore, the collateral agreement and the legal process underpinning it must\nbe such that they provide for the bank to realise the value of the collateral within a reasonable\ntimeframe.",
+    "text": "Furthermore, the collateral agreement and the legal process underpinning it shall\nbe such that they provide for the credit institution to realise the value of the collateral within a reasonable\ntimeframe.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "must -> shall",
+      "bank -> credit institution"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0900",
+    "original_text": "Recordkeeping Obligation\nFor purposes of this analysis, we assume the following records would likely be retained\npursuant to amended Rule 17a-3(a)(35): (1) existing account disclosure documents;",
+    "text": "Recordkeeping Obligation\nFor purposes of this analysis, we assume the following records would likely be retained\npursuant to amended Rule 17a-3(a)(35): (1) existing account disclosure documents;",
+    "perturbation": "synonym_swap",
+    "changes": [],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0014",
+    "original_text": "A counterparty bank classified into Grade A must meet or exceed the published minimum\nregulatory requirements and buffers established by its national supervisor as implemented in the\njurisdiction where it is incorporated, except for bank-specific minimum regulatory requirements or buffers\nthat may be imposed through supervisory actions (eg via Pillar 2) and not made public.",
+    "text": "A counterparty institution classified into Grade A is required to meet or exceed the published minimum\nregulatory requirements and buffers established by its national supervisor as implemented in the\njurisdiction where it is incorporated, except for bank-specific minimum regulatory requirements or buffers\nthat may be imposed through supervisory actions (eg via Pillar 2) and not made public.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "must -> is required to",
+      "bank -> institution"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0797",
+    "original_text": "In addition, a record of the fact of such oral disclosure having been\nmade must be created and retained.",
+    "text": "In addition, a record of the fact of such oral disclosure having been\nmade shall be created and retained.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "must -> shall"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0893",
+    "original_text": "Training\nPursuant to the obligation to \u201cmaintain and enforce\u201d written policies and procedures, we\nadditionally believe small entities will develop training programs that promote compliance with\nRegulation Best Interest.",
+    "text": "Training\nPursuant to the obligation to \u201cmaintain and enforce\u201d written policies and procedures, we\nadditionally believe small entities will develop training programs that promote compliance with\nRegulation Best Interest.",
+    "perturbation": "synonym_swap",
+    "changes": [],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0327",
+    "original_text": "If rating criteria and procedures differ for different types of borrowers or facilities, the bank must\nBasel III: Finalising post-crisis reforms 85\nmonitor for possible inconsistency, and must alter rating criteria to improve consistency when\nappropriate.",
+    "text": "If rating criteria and procedures differ for different types of borrowers or facilities, the financial entity is obligated to\nBasel III: Finalising post-crisis reforms 85\nmonitor for possible inconsistency, and must alter rating criteria to improve consistency when\nappropriate.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "must -> is obligated to",
+      "bank -> financial entity"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0672",
+    "original_text": "However, as we discussed above\nwith respect to recommendations more generally, we believe that any loss of revenues associated\nwith recommendations that would not satisfy the Care Obligation is compensated by the\n1257 See ICI Letter;",
+    "text": "However, as we discussed above\nwith respect to recommendations more generally, we believe that any loss of revenues associated\nwith recommendations that would not satisfy the Care Obligation is compensated by the\n1257 See ICI Letter;",
+    "perturbation": "synonym_swap",
+    "changes": [],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0108",
+    "original_text": "In addition, Dodd-Frank Act Section 913 provides that offering only proprietary\nproducts by a broker-dealer shall not, in and of itself, violate such a uniform fiduciary\nstandard, but may be subject to disclosure and consent requirements.",
+    "text": "In addition, Dodd-Frank Act Section 913 provides that offering only proprietary\nproducts by a broker-dealer is required to not, in and of itself, violate such a uniform fiduciary\nstandard, but may be subject to disclosure and consent requirements.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "shall -> is required to"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0697",
+    "original_text": "Loss data\nis required to be reported on both a gross basis and after recoveries and loss exclusions.",
+    "text": "Loss data\nis required to be reported on both a gross basis and after recoveries and loss exclusions.",
+    "perturbation": "synonym_swap",
+    "changes": [],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0319",
+    "original_text": "Banks using the supervisory slotting criteria must have at least four grades for non-defaulted\nborrowers, and one for defaulted borrowers.",
+    "text": "Banks using the supervisory slotting criteria is required to have at least four grades for non-defaulted\nborrowers, and one for defaulted borrowers.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "must -> is required to"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0441",
+    "original_text": "\u2022 The bank has filed for the obligor\u2019s bankruptcy or a similar order in respect of the obligor\u2019s credit\nobligation to the banking group.",
+    "text": "\u2022 The credit institution has filed for the obligor\u2019s bankruptcy or a similar order in respect of the obligor\u2019s credit\nobligation to the banking group.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "bank -> credit institution"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0806",
+    "original_text": "1462 This estimate is based on the following calculation: (455,165 aggregate annual burden\nhours for ongoing compliance with disclosure of capacity and type and scope of services)\n+ (825,552 aggregate annual burden hours for ongoing compliance with disclosure of\nfees and costs) + (820,776 aggregate annual burden hours for ongoing compliance with\ndisclosure of all material facts regarding disclosure of conflicts of interest associated with\nthe recommendation) = 2,101,493 total aggregate burden hours per year for ongoing\ncompliance with the Disclosure Obligation.",
+    "text": "1462 This estimate is based on the following calculation: (455,165 aggregate annual burden\nhours for ongoing compliance with disclosure of capacity and type and scope of services)\n+ (825,552 aggregate annual burden hours for ongoing compliance with disclosure of\nfees and costs) + (820,776 aggregate annual burden hours for ongoing compliance with\ndisclosure of all material facts regarding disclosure of conflicts of interest associated with\nthe recommendation) = 2,101,493 total aggregate burden hours per year for ongoing\ncompliance with the Disclosure Obligation.",
+    "perturbation": "synonym_swap",
+    "changes": [],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0690",
+    "original_text": "The following items must be included in the gross loss computation of the loss data set:\n(a) Direct charges, including impairments and settlements, to the bank\u2019s P&L accounts and write-\ndowns due to the operational risk event;",
+    "text": "The following items is required to be included in the gross loss computation of the loss data set:\n(a) Direct charges, including impairments and settlements, to the institution\u2019s P&L accounts and write-\ndowns due to the operational vulnerability event;",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "must -> is required to",
+      "bank -> institution",
+      "risk -> vulnerability"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0190",
+    "original_text": "Other supervisors need to ensure that\nsuch treatment is then applied equally to banks under their supervision when making such HVCRE loans\nin that jurisdiction.",
+    "text": "Other supervisors need to make certain that\nsuch treatment is then applied equally to banks under their supervision when making such HVCRE loans\nin that jurisdiction.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "ensure -> make certain"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0021",
+    "original_text": "The Commission is statutorily obligated to respond to the recommendations of the IAC,\nwhich we are doing in this section and throughout the adopting release in the relevant\nsections, for example, in the discussion of the General Obligation in Section II.A.1, the\ndiscussion of recommendations in Section II.B.1, Recommendation of Any Securities\nTransaction or Investment Strategy Involving Securities, and the Care Obligation in\nSection II.C.2.",
+    "text": "The Commission is statutorily obligated to respond to the recommendations of the IAC,\nwhich we are doing in this section and throughout the adopting release in the relevant\nsections, for example, in the discussion of the General Obligation in Section II.A.1, the\ndiscussion of recommendations in Section II.B.1, Recommendation of Any Securities\nTransaction or Investment Strategy Involving Securities, and the Care Obligation in\nSection II.C.2.",
+    "perturbation": "synonym_swap",
+    "changes": [],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0199",
+    "original_text": "Basel III: Finalising post-crisis reforms 57\n(f) The supervisor must concur that treatment as a qualifying revolving retail exposure is consistent\nwith the underlying risk characteristics of the sub-portfolio.",
+    "text": "Basel III: Finalising post-crisis reforms 57\n(f) The supervisor shall concur that treatment as a qualifying revolving retail exposure is consistent\nwith the underlying exposure characteristics of the sub-portfolio.",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "must -> shall",
+      "risk -> exposure"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0736",
+    "original_text": "\u2022 the credit protection purchased through credit derivatives is not purchased from a counterparty\nwhose credit quality is highly correlated with the value of the reference obligation in the sense\nspecified in paragraph 101 of the Basel III framework;26\n\u2022 in the event that the effective notional amount of a written credit derivative is reduced by any\nnegative change in fair value reflected in the bank\u2019s Tier 1 capital, the effective notional amount\nof the offsetting credit protection purchased through credit derivatives must also be reduced by\nany resulting positive change in fair value reflected in Tier 1 capital;",
+    "text": "\u2022 the credit protection purchased through credit derivatives is not purchased from a counterparty\nwhose credit quality is highly correlated with the value of the reference obligation in the sense\nspecified in paragraph 101 of the Basel III framework;26\n\u2022 in the event that the effective notional amount of a written credit derivative is reduced by any\nnegative change in fair value reflected in the financial entity\u2019s Tier 1 reserves, the effective notional amount\nof the offsetting credit protection purchased through credit derivatives shall also be reduced by\nany resulting positive change in fair value reflected in Tier 1 capital;",
+    "perturbation": "synonym_swap",
+    "changes": [
+      "must -> shall",
+      "bank -> financial entity",
+      "capital -> reserves"
+    ],
+    "semantic_preserving": true
+  },
+  {
+    "original_clause_id": "OBL-0549",
+    "original_text": "\u2022 Internal systems must ensure that funds are advanced only against specified supporting collateral\nand documentation (such as servicer attestations, invoices, shipping documents, etc).",
+    "text": "\u2022 Internal systems must not ensure that funds are advanced only against specified supporting collateral\nand documentation (such as servicer attestations, invoices, shipping documents, etc).",
+    "perturbation": "negation_injection",
+    "changes": [
+      "\\bmust\\b -> must not"
+    ],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0136",
+    "original_text": "In jurisdictions that do not allow the use of external ratings for regulatory purposes, the following\nsupervisory haircuts (assuming daily mark-to-market, daily remargining and a 10-business day holding\nperiod), expressed as percentages, must be used to determine the haircuts appropriate to the collateral\n(Hc) and to the exposure (He):\n73 Includes: PSEs that are treated as sovereigns by the national supervisor, as well as multilateral development banks receiving a\n0% risk weight.",
+    "text": "In jurisdictions that do not allow the use of external ratings for regulatory purposes, the following\nsupervisory haircuts (assuming daily mark-to-market, daily remargining and a 10-business day holding\nperiod), expressed as percentages, must not be used to determine the haircuts appropriate to the collateral\n(Hc) and to the exposure (He):\n73 Includes: PSEs that are treated as sovereigns by the national supervisor, as well as multilateral development banks receiving a\n0% risk weight.",
+    "perturbation": "negation_injection",
+    "changes": [
+      "\\bmust\\b -> must not"
+    ],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0433",
+    "original_text": "In order\nto avoid over-optimism, a bank must add to its estimates a margin of conservatism that is related to the\nlikely range of errors.",
+    "text": "In order\nto avoid over-optimism, a bank must not add to its estimates a margin of conservatism that is related to the\nlikely range of errors.",
+    "perturbation": "negation_injection",
+    "changes": [
+      "\\bmust\\b -> must not"
+    ],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0404",
+    "original_text": "Additional factors such as\nthose cited by commenters also should be taken into consideration as the broker-dealer\nformulates a recommendation consistent with the best-interest standard.567\nThough we are declining to expressly define \u201cbest interest\u201d in the rule text, as discussed\nabove,568 we are providing guidance regarding the application of the Care Obligation and in\nparticular what it means to make a recommendation in the retail customer\u2019s \u201cbest interest.\u201d In\naddition, to emphasize the importance of determining that each recommendation is in the best\ninterest of the retail customer and that it does not place the broker-dealer\u2019s interests ahead of the\nretail customer\u2019s interests, we are expressly incorporating into the rule text of Paragraph\n(a)(2)(ii)(B) and Paragraph (a)(2)(ii)(C) of Regulation Best Interest that a broker-dealer must\n567 See, e.g., BlackRock Letter (citing consideration of investors\u2019 needs and desired\noutcomes relative to service offerings of several different managers);",
+    "text": "Additional factors such as\nthose cited by commenters also should be taken into consideration as the broker-dealer\nformulates a recommendation consistent with the best-interest standard.567\nThough we are declining to expressly define \u201cbest interest\u201d in the rule text, as discussed\nabove,568 we are providing guidance regarding the application of the Care Obligation and in\nparticular what it means to make a recommendation in the retail customer\u2019s \u201cbest interest.\u201d In\naddition, to emphasize the importance of determining that each recommendation is in the best\ninterest of the retail customer and that it does not place the broker-dealer\u2019s interests ahead of the\nretail customer\u2019s interests, we are expressly incorporating into the rule text of Paragraph\n(a)(2)(ii)(B) and Paragraph (a)(2)(ii)(C) of Regulation Best Interest that a broker-dealer must not\n567 See, e.g., BlackRock Letter (citing consideration of investors\u2019 needs and desired\noutcomes relative to service offerings of several different managers);",
+    "perturbation": "negation_injection",
+    "changes": [
+      "\\bmust\\b -> must not"
+    ],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0713",
+    "original_text": "Material Limitations on Recommendations to Retail Customers\nThe Conflict of Interest Obligation includes a requirement that specifically addresses\nmaterial limitations on recommendations to retail customer (e.g., offering only proprietary or\n1283 See, e.g., CFA August 2018 Letter;",
+    "text": "Material Limitations on Recommendations to Retail Customers\nThe Conflict of Interest Obligation includes a requirement that specifically addresses\nmaterial limitations on recommendations to retail customer (e.g., offering only proprietary or\n1283 See, e.g., CFA August 2018 Letter;",
+    "perturbation": "negation_injection",
+    "changes": [],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0645",
+    "original_text": "This documentation must set out\nthe minimum frequency with which ongoing validation will be conducted as well as other\ncircumstances (such as a sudden change in market behaviour).",
+    "text": "This documentation must not set out\nthe minimum frequency with which ongoing validation will be conducted as well as other\ncircumstances (such as a sudden change in market behaviour).",
+    "perturbation": "negation_injection",
+    "changes": [
+      "\\bmust\\b -> must not"
+    ],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0436",
+    "original_text": "Data collected beyond the\ndate of implementation must conform to the minimum standards unless otherwise stated.",
+    "text": "Data collected beyond the\ndate of implementation must not conform to the minimum standards unless otherwise stated.",
+    "perturbation": "negation_injection",
+    "changes": [
+      "\\bmust\\b -> must not"
+    ],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0585",
+    "original_text": "7, 2003) (Commission Opinion)\n(\u201cWhen a securities dealer recommends stock to a customer, it is not only obligated to\navoid affirmative misstatements, but also must disclose material adverse facts of which it\nis aware.",
+    "text": "7, 2003) (Commission Opinion)\n(\u201cWhen a securities dealer recommends stock to a customer, it is not only obligated to\navoid affirmative misstatements, but also must not disclose material adverse facts of which it\nis aware.",
+    "perturbation": "negation_injection",
+    "changes": [
+      "\\bmust\\b -> must not"
+    ],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0265",
+    "original_text": "however the disclosure should also address circumstances of\n413 See, e.g., LPL August 2018 Letter (stating that a broker-dealer could satisfy the Care\nObligation if it recommends a more expensive investment product so long as it discloses\nthat the recommended product is not the least expensive among the alternatives and is\notherwise in the investor\u2019s best interest);",
+    "text": "however the disclosure should also address circumstances of\n413 See, e.g., LPL August 2018 Letter (stating that a broker-dealer could satisfy the Care\nObligation if it recommends a more expensive investment product so long as it discloses\nthat the recommended product is not the least expensive among the alternatives and is\notherwise in the investor\u2019s best interest);",
+    "perturbation": "negation_injection",
+    "changes": [],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0053",
+    "original_text": "See also AFL-\nCIO April 2019 Letter (stating that the rule \u201cmust make clear that brokers are required to\nrecommend the investments they reasonably believe are the best match for the investor\nfrom among the reasonably available investment options\u201d).",
+    "text": "See also AFL-\nCIO April 2019 Letter (stating that the rule \u201cmust not make clear that brokers are required to\nrecommend the investments they reasonably believe are the best match for the investor\nfrom among the reasonably available investment options\u201d).",
+    "perturbation": "negation_injection",
+    "changes": [
+      "\\bmust\\b -> must not"
+    ],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0559",
+    "original_text": "We solicited comment on the proposed requirement to establish, maintain, and enforce\ncertain policies and procedures as part of the Conflict of Interest Obligation, including whether\nwe should require policies and procedures specifically to assist compliance with Regulation Best\nInterest.",
+    "text": "We solicited comment on the proposed requirement to establish, maintain, and enforce\ncertain policies and procedures as part of the Conflict of Interest Obligation, including whether\nwe should require policies and procedures specifically to assist compliance with Regulation Best\nInterest.",
+    "perturbation": "negation_injection",
+    "changes": [],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0182",
+    "original_text": "Before supplementing, clarifying or updating written disclosures in\nthe limited circumstances described above, broker-dealers must provide an initial disclosure in\nwriting that identifies the material fact and describes the process through which such fact may be\nsupplemented, clarified or updated.",
+    "text": "Before supplementing, clarifying or updating written disclosures in\nthe limited circumstances described above, broker-dealers must not provide an initial disclosure in\nwriting that identifies the material fact and describes the process through which such fact may be\nsupplemented, clarified or updated.",
+    "perturbation": "negation_injection",
+    "changes": [
+      "\\bmust\\b -> must not"
+    ],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0293",
+    "original_text": "Banks\u2019 overall credit risk\nmanagement practices must also be consistent with the evolving sound practice guidelines issued by the\nCommittee and national supervisors.",
+    "text": "Banks\u2019 overall credit risk\nmanagement practices must not also be consistent with the evolving sound practice guidelines issued by the\nCommittee and national supervisors.",
+    "perturbation": "negation_injection",
+    "changes": [
+      "\\bmust\\b -> must not"
+    ],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0543",
+    "original_text": "The findings of these reviews must be well documented.",
+    "text": "The findings of these reviews must not be well documented.",
+    "perturbation": "negation_injection",
+    "changes": [
+      "\\bmust\\b -> must not"
+    ],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0286",
+    "original_text": "To be eligible for the IRB approach a bank must demonstrate to its supervisor that it meets certain\nminimum requirements at the outset and on an ongoing basis.",
+    "text": "To be eligible for the IRB approach a bank must not demonstrate to its supervisor that it meets certain\nminimum requirements at the outset and on an ongoing basis.",
+    "perturbation": "negation_injection",
+    "changes": [
+      "\\bmust\\b -> must not"
+    ],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0506",
+    "original_text": "The bank must be able to monitor outstanding balances on a\ndaily basis.",
+    "text": "The bank must not be able to monitor outstanding balances on a\ndaily basis.",
+    "perturbation": "negation_injection",
+    "changes": [
+      "\\bmust\\b -> must not"
+    ],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0768",
+    "original_text": "Specifically, the paper observes, among other things, that a state-level\nobligation reduces the number of broker-dealers that are not dually registered by about\n16% but has no meaningful effect on the number of dual-registrants.",
+    "text": "Specifically, the paper observes, among other things, that a state-level\nobligation reduces the number of broker-dealers that are not dually registered by about\n16% but has no meaningful effect on the number of dual-registrants.",
+    "perturbation": "negation_injection",
+    "changes": [],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0392",
+    "original_text": "Care Obligation\nWe proposed the Care Obligation to require a broker-dealer, when making a\nrecommendation of any securities transaction or investment strategy involving securities to a\nretail customer, to exercise reasonable diligence, care, skill, and prudence to: (1) understand the\npotential risks and rewards associated with the recommendation, and have a reasonable basis to\nbelieve that the recommendation could be in the best interest of at least some retail customers;",
+    "text": "Care Obligation\nWe proposed the Care Obligation to require a broker-dealer, when making a\nrecommendation of any securities transaction or investment strategy involving securities to a\nretail customer, to exercise reasonable diligence, care, skill, and prudence to: (1) understand the\npotential risks and rewards associated with the recommendation, and have a reasonable basis to\nbelieve that the recommendation could be in the best interest of at least some retail customers;",
+    "perturbation": "negation_injection",
+    "changes": [],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0346",
+    "original_text": "For example, broker-dealers\nmust disclose information about a transaction on trade confirmations pursuant to\nExchange Act Rule 10b-10.",
+    "text": "For example, broker-dealers\nmust not disclose information about a transaction on trade confirmations pursuant to\nExchange Act Rule 10b-10.",
+    "perturbation": "negation_injection",
+    "changes": [
+      "\\bmust\\b -> must not"
+    ],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0539",
+    "original_text": "The bank must be able to monitor both the quality of the receivables and the financial condition\nof the seller and servicer.",
+    "text": "The bank must not be able to monitor both the quality of the receivables and the financial condition\nof the seller and servicer.",
+    "perturbation": "negation_injection",
+    "changes": [
+      "\\bmust\\b -> must not"
+    ],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0772",
+    "original_text": "Prescribed Format for Disclosure\nAlthough Regulation Best Interest specifies the required content of disclosure necessary\nto meet a broker-dealer\u2019s Disclosure Obligation, it does not prescribe a specific format for that\n656\ndisclosure.",
+    "text": "Prescribed Format for Disclosure\nAlthough Regulation Best Interest specifies the required content of disclosure necessary\nto meet a broker-dealer\u2019s Disclosure Obligation, it does not prescribe a specific format for that\n656\ndisclosure.",
+    "perturbation": "negation_injection",
+    "changes": [],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0440",
+    "original_text": "Regardless of which factors are evaluated\u2014and equally\nimportant, which factors are not evaluated\u2014a broker-dealer must have a reasonable basis to\nbelieve that the particular recommendation is in the best interest of the particular retail customer\nand does not place the broker-dealer\u2019s interest ahead of the retail customer\u2019s interest, consistent\nwith the interpretations and guidance provided.",
+    "text": "Regardless of which factors are evaluated\u2014and equally\nimportant, which factors are not evaluated\u2014a broker-dealer must not have a reasonable basis to\nbelieve that the particular recommendation is in the best interest of the particular retail customer\nand does not place the broker-dealer\u2019s interest ahead of the retail customer\u2019s interest, consistent\nwith the interpretations and guidance provided.",
+    "perturbation": "negation_injection",
+    "changes": [
+      "\\bmust\\b -> must not"
+    ],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0120",
+    "original_text": "In particular, whether a broker-dealer\u2019s recommendation satisfies\nthe requirements of the Care Obligation is an objective evaluation that is not susceptible to a\nbright line test;",
+    "text": "In particular, whether a broker-dealer\u2019s recommendation satisfies\nthe requirements of the Care Obligation is an objective evaluation that is not susceptible to a\nbright line test;",
+    "perturbation": "negation_injection",
+    "changes": [],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0438",
+    "original_text": "Accordingly, when making a recommendation to a particular retail customer,\nbroker-dealers must weigh the potential risks, rewards, and costs of a particular security or\ninvestment strategy, in light of the particular retail customer\u2019s investment profile.",
+    "text": "Accordingly, when making a recommendation to a particular retail customer,\nbroker-dealers must not weigh the potential risks, rewards, and costs of a particular security or\ninvestment strategy, in light of the particular retail customer\u2019s investment profile.",
+    "perturbation": "negation_injection",
+    "changes": [
+      "\\bmust\\b -> must not"
+    ],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0060",
+    "original_text": "Furthermore, we are modifying the Disclosure Obligation to explicitly require broker-\ndealers to provide \u201cfull and fair\u201d disclosure of material facts, rather than requiring broker-dealers\nto \u201creasonably disclose\u201d such information.",
+    "text": "Furthermore, we are modifying the Disclosure Obligation to explicitly require broker-\ndealers to provide \u201cfull and fair\u201d disclosure of material facts, rather than requiring broker-dealers\nto \u201creasonably disclose\u201d such information.",
+    "perturbation": "negation_injection",
+    "changes": [],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0742",
+    "original_text": "To achieve such equivalence, both transactions are\nsettled through the same settlement system and the settlement arrangements are\nsupported by cash and/or intraday credit facilities intended to ensure that settlement of\nboth transactions will occur by the end of the business day and any issues arising from\nthe securities legs of the SFTs do not interfere with the completion of the net settlement\nof the cash receivables and payables.",
+    "text": "To achieve such equivalence, both transactions are\nsettled through the same settlement system and the settlement arrangements are\nsupported by cash and/or intraday credit facilities intended to ensure that settlement of\nboth transactions will occur by the end of the business day and any issues arising from\nthe securities legs of the SFTs do not interfere with the completion of the net settlement\nof the cash receivables and payables.",
+    "perturbation": "negation_injection",
+    "changes": [],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0450",
+    "original_text": "The bank must have clearly articulated and documented policies in respect of the counting of\ndays past due, in particular in respect of the re-ageing of the facilities and the granting of extensions,\ndeferrals, renewals and rewrites to existing accounts.",
+    "text": "The bank must not have clearly articulated and documented policies in respect of the counting of\ndays past due, in particular in respect of the re-ageing of the facilities and the granting of extensions,\ndeferrals, renewals and rewrites to existing accounts.",
+    "perturbation": "negation_injection",
+    "changes": [
+      "\\bmust\\b -> must not"
+    ],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0284",
+    "original_text": "As specified in paragraphs 61 and 73 of the Basel III framework (June 2011), banks using the IRB\napproach must compare the total amount of total eligible provisions (as defined in paragraph 147) with\nthe total EL amount as calculated within the IRB approach (as defined in paragraph 142).",
+    "text": "As specified in paragraphs 61 and 73 of the Basel III framework (June 2011), banks using the IRB\napproach must not compare the total amount of total eligible provisions (as defined in paragraph 147) with\nthe total EL amount as calculated within the IRB approach (as defined in paragraph 142).",
+    "perturbation": "negation_injection",
+    "changes": [
+      "\\bmust\\b -> must not"
+    ],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0286",
+    "original_text": "Broker-dealers also may need to include additional information about conflicts of interest\n198\nHowever, as discussed in more detail below, in response to comments and in the light of\nthe Relationship Summary, we are: (1) adopting for purposes of Regulation Best Interest a\ndefinition of \u201cconflict of interest\u201d associated with a recommendation \u201cas an interest that might\nincline a broker, dealer, or a natural person who is an associated person of a broker or dealer\u2014\nconsciously or unconsciously\u2014to make a recommendation that is not disinterested;\u201d and (2)\nrevising the Disclosure Obligation to require disclosure of \u201cmaterial facts\u201d regarding such\nconflicts of interest.",
+    "text": "Broker-dealers also may need to include additional information about conflicts of interest\n198\nHowever, as discussed in more detail below, in response to comments and in the light of\nthe Relationship Summary, we are: (1) adopting for purposes of Regulation Best Interest a\ndefinition of \u201cconflict of interest\u201d associated with a recommendation \u201cas an interest that might\nincline a broker, dealer, or a natural person who is an associated person of a broker or dealer\u2014\nconsciously or unconsciously\u2014to make a recommendation that is not disinterested;\u201d and (2)\nrevising the Disclosure Obligation to require disclosure of \u201cmaterial facts\u201d regarding such\nconflicts of interest.",
+    "perturbation": "negation_injection",
+    "changes": [],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0253",
+    "original_text": "SPARK Letter\n(recommending that the Commission permit broker-dealers that only offers proprietary\nproducts or a limited menu of investments to satisfy the conflict mitigation requirements\nby: (1) disclosing any material limitations on the investment products being offered and\n(2) reasonably concluding that the limitations will not violate the Care Obligation).",
+    "text": "SPARK Letter\n(recommending that the Commission permit broker-dealers that only offers proprietary\nproducts or a limited menu of investments to satisfy the conflict mitigation requirements\nby: (1) disclosing any material limitations on the investment products being offered and\n(2) reasonably concluding that the limitations will not violate the Care Obligation).",
+    "perturbation": "negation_injection",
+    "changes": [],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0187",
+    "original_text": "\u2022 The terms of the obligation give the lender a substantial degree of control over the asset(s) and\nthe income that it generates;",
+    "text": "\u2022 The terms of the obligation give the lender a substantial degree of control over the asset(s) and\nthe income that it generates;",
+    "perturbation": "negation_injection",
+    "changes": [],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0790",
+    "original_text": "With respect to disclosure of the type and scope of services provided by the broker-dealer,\nincluding any material limitations on the securities or investment strategies that may be\nrecommended to the retail customer, we assume for purposes of this PRA analysis that a broker-\ndealer would satisfy the Disclosure Obligation by including this information in the account\ndisclosure provided to the retail customer at the beginning of the relationship, as described above.",
+    "text": "With respect to disclosure of the type and scope of services provided by the broker-dealer,\nincluding any material limitations on the securities or investment strategies that may be\nrecommended to the retail customer, we assume for purposes of this PRA analysis that a broker-\ndealer would satisfy the Disclosure Obligation by including this information in the account\ndisclosure provided to the retail customer at the beginning of the relationship, as described above.",
+    "perturbation": "negation_injection",
+    "changes": [],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0097",
+    "original_text": "60 At a minimum, the following situations and their influence on the ECAI\u2019s credit rating methodologies or credit rating actions\nshall be disclosed:\n\u2022 The ECAI is being paid to issue a credit rating by the rated entity or by the obligor, originator, underwriter, or arranger of\nthe rated obligation;",
+    "text": "60 At a minimum, the following situations and their influence on the ECAI\u2019s credit rating methodologies or credit rating actions\nshall not be disclosed:\n\u2022 The ECAI is being paid to issue a credit rating by the rated entity or by the obligor, originator, underwriter, or arranger of\nthe rated obligation;",
+    "perturbation": "negation_injection",
+    "changes": [
+      "\\bshall\\b -> shall not"
+    ],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0225",
+    "original_text": "The LGD applicable to a collateralised transaction (LGD*) must be calculated as the exposure\nweighted average of the LGD applicable to the unsecured part of an exposure (LGD ) and the LGD\nU\napplicable to the collateralised part of an exposure (LGD ).",
+    "text": "The LGD applicable to a collateralised transaction (LGD*) must not be calculated as the exposure\nweighted average of the LGD applicable to the unsecured part of an exposure (LGD ) and the LGD\nU\napplicable to the collateralised part of an exposure (LGD ).",
+    "perturbation": "negation_injection",
+    "changes": [
+      "\\bmust\\b -> must not"
+    ],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0314",
+    "original_text": "The grade definition must include\nboth a description of the degree of default risk typical for borrowers assigned the grade and the criteria\nused to distinguish that level of credit risk.",
+    "text": "The grade definition must not include\nboth a description of the degree of default risk typical for borrowers assigned the grade and the criteria\nused to distinguish that level of credit risk.",
+    "perturbation": "negation_injection",
+    "changes": [
+      "\\bmust\\b -> must not"
+    ],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0528",
+    "original_text": "768 See Disclosure Obligation at Section II.C.1.",
+    "text": "768 See Disclosure Obligation at Section II.C.1.",
+    "perturbation": "negation_injection",
+    "changes": [],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0328",
+    "original_text": "\u2022 Written rating definitions must be clear and detailed enough to allow third parties to understand\nthe assignment of ratings, such as internal audit or an equally independent function and\nsupervisors, to replicate rating assignments and evaluate the appropriateness of the grade/pool\nassignments.",
+    "text": "\u2022 Written rating definitions must not be clear and detailed enough to allow third parties to understand\nthe assignment of ratings, such as internal audit or an equally independent function and\nsupervisors, to replicate rating assignments and evaluate the appropriateness of the grade/pool\nassignments.",
+    "perturbation": "negation_injection",
+    "changes": [
+      "\\bmust\\b -> must not"
+    ],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0865",
+    "original_text": "Third, as described in Section II.C.3, under the Conflict of Interest Obligation, a broker-\ndealer must establish, maintain, and enforce reasonably designed written policies and procedures\naddressing conflicts of interest associated with its recommendations to retail customers.",
+    "text": "Third, as described in Section II.C.3, under the Conflict of Interest Obligation, a broker-\ndealer must not establish, maintain, and enforce reasonably designed written policies and procedures\naddressing conflicts of interest associated with its recommendations to retail customers.",
+    "perturbation": "negation_injection",
+    "changes": [
+      "\\bmust\\b -> must not"
+    ],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0636",
+    "original_text": "552\nObligation is consistent with our estimate of initial costs above.1236 Second, we note that, as\ndiscussed in more detail above in Section II.C.1.d, the Disclosure Obligation only requires that\ncertain disclosures be made prior to or at the time of a recommendation, and broker-dealers may\nuse standardized disclosures at an earlier point than the time of a recommendation to the extent\nsuch disclosures satisfy the Disclosure Obligation.",
+    "text": "552\nObligation is consistent with our estimate of initial costs above.1236 Second, we note that, as\ndiscussed in more detail above in Section II.C.1.d, the Disclosure Obligation only requires that\ncertain disclosures be made prior to or at the time of a recommendation, and broker-dealers may\nuse standardized disclosures at an earlier point than the time of a recommendation to the extent\nsuch disclosures satisfy the Disclosure Obligation.",
+    "perturbation": "negation_injection",
+    "changes": [],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0107",
+    "original_text": "Nevertheless, because of the differences in the approach to the treatment of\nconflicts under ERISA and under the federal securities laws\u2014ERISA starts by prohibiting\nconflicts and then through exemptions permits certain conflicts, whereas the federal securities\nlaws generally start with disclosure and become more restrictive\u2014we share commenters\u2019\ncompensation, or other standard compensation, for the sale of securities shall not, in and\nof itself, violate any uniform fiduciary standard promulgated under that subsection\u2019s\nauthority as applied to a broker-dealer.",
+    "text": "Nevertheless, because of the differences in the approach to the treatment of\nconflicts under ERISA and under the federal securities laws\u2014ERISA starts by prohibiting\nconflicts and then through exemptions permits certain conflicts, whereas the federal securities\nlaws generally start with disclosure and become more restrictive\u2014we share commenters\u2019\ncompensation, or other standard compensation, for the sale of securities shall not not, in and\nof itself, violate any uniform fiduciary standard promulgated under that subsection\u2019s\nauthority as applied to a broker-dealer.",
+    "perturbation": "negation_injection",
+    "changes": [
+      "\\bshall\\b -> shall not"
+    ],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0464",
+    "original_text": "We recognize that the process by which a broker-dealer and its associated persons\ndevelop and make recommendations to retail customers, including the scope of reasonably\navailable alternatives considered, will depend upon a variety factors, including the nature of the\nbroker-dealer\u2019s business.646 The disclosure of this process pursuant to the Disclosure Obligation\n646 Accordingly, we believe that disclosure of this process is of fundamental importance to a\nretail customer\u2019s understanding of what services are being provided, and in deciding\nwhether those services are appropriate to the retail customer\u2019s needs and goals, and have\nthus clarified that the basis for a broker-dealer\u2019s or an associated person\u2019s\nrecommendations as a general matter (i.e., what might commonly be described as the\nfirm\u2019s or associated person\u2019s investment approach, philosophy or strategy) is a material\n289\nwill provide critical information to retail customers and underscores our acknowledgment that\nwe do not expect every broker-dealer or associated person to follow the same process.",
+    "text": "We recognize that the process by which a broker-dealer and its associated persons\ndevelop and make recommendations to retail customers, including the scope of reasonably\navailable alternatives considered, will depend upon a variety factors, including the nature of the\nbroker-dealer\u2019s business.646 The disclosure of this process pursuant to the Disclosure Obligation\n646 Accordingly, we believe that disclosure of this process is of fundamental importance to a\nretail customer\u2019s understanding of what services are being provided, and in deciding\nwhether those services are appropriate to the retail customer\u2019s needs and goals, and have\nthus clarified that the basis for a broker-dealer\u2019s or an associated person\u2019s\nrecommendations as a general matter (i.e., what might commonly be described as the\nfirm\u2019s or associated person\u2019s investment approach, philosophy or strategy) is a material\n289\nwill provide critical information to retail customers and underscores our acknowledgment that\nwe do not expect every broker-dealer or associated person to follow the same process.",
+    "perturbation": "negation_injection",
+    "changes": [],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0131",
+    "original_text": "Haircuts must be scaled up using the square root of time formula depending on the frequency of\nremargining or marking to market.",
+    "text": "Haircuts must not be scaled up using the square root of time formula depending on the frequency of\nremargining or marking to market.",
+    "perturbation": "negation_injection",
+    "changes": [
+      "\\bmust\\b -> must not"
+    ],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0031",
+    "original_text": "The broker-\ndealer must then consider those risks, rewards, and costs in light of the customer\u2019s investment\nprofile and have a reasonable basis to believe that the recommendation is in the customer\u2019s best\ninterest and does not place the broker-dealer\u2019s interest ahead of the retail customer\u2019s interest.",
+    "text": "The broker-\ndealer must not then consider those risks, rewards, and costs in light of the customer\u2019s investment\nprofile and have a reasonable basis to believe that the recommendation is in the customer\u2019s best\ninterest and does not place the broker-dealer\u2019s interest ahead of the retail customer\u2019s interest.",
+    "perturbation": "negation_injection",
+    "changes": [
+      "\\bmust\\b -> must not"
+    ],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0024",
+    "original_text": "(2) exercising reasonable diligence, care, and skill in making the\nrecommendation (\u201cCare Obligation\u201d);",
+    "text": "(2) exercising reasonable diligence, care, and skill in making the\nrecommendation (\u201cCare Obligation\u201d);",
+    "perturbation": "negation_injection",
+    "changes": [],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0463",
+    "original_text": "All\nrecommendations to retail customers of securities or investment strategies are required to satisfy\nthe Care Obligation, and broker-dealers cannot use a limited product menu or a process to\ndetermine the scope of reasonably available alternatives considered to justify a recommendation\nthat is not in the best interest of the retail customer.",
+    "text": "All\nrecommendations to retail customers of securities or investment strategies are required to satisfy\nthe Care Obligation, and broker-dealers cannot use a limited product menu or a process to\ndetermine the scope of reasonably available alternatives considered to justify a recommendation\nthat is not in the best interest of the retail customer.",
+    "perturbation": "negation_injection",
+    "changes": [],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0201",
+    "original_text": "Several commenters requested additional guidance on how dual-registrants and their\nassociated persons could comply with the proposed Disclosure Obligation in this respect.316\nSome commenters stated that repeated disclosures of capacity would distract customers from\nmore important disclosures related to a recommendation and could lead to confusion.317 While\nwe received comments expressing concerns that our proposed approach might lead to investor\n315 Proposing Release at 21601.",
+    "text": "Several commenters requested additional guidance on how dual-registrants and their\nassociated persons could comply with the proposed Disclosure Obligation in this respect.316\nSome commenters stated that repeated disclosures of capacity would distract customers from\nmore important disclosures related to a recommendation and could lead to confusion.317 While\nwe received comments expressing concerns that our proposed approach might lead to investor\n315 Proposing Release at 21601.",
+    "perturbation": "negation_injection",
+    "changes": [],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0326",
+    "original_text": "As we noted in the Proposing Release, while we are providing flexibility to broker-\ndealers to meet the Disclosure Obligation, we continue to be sensitive to the potential that\nbroker-dealers could opt to disclose all facts, including those that do not meet the materiality\nthreshold.479 We are cognizant of the likelihood that some broker-dealers could provide lengthy\ndisclosures that do not meaningfully convey the material facts regarding the scope and terms of\nthe relationship and material facts regarding conflicts of interest, an outcome that could\nundermine the Commission\u2019s goal of facilitating disclosure to assist retail customers in making\nan informed investment decision.",
+    "text": "As we noted in the Proposing Release, while we are providing flexibility to broker-\ndealers to meet the Disclosure Obligation, we continue to be sensitive to the potential that\nbroker-dealers could opt to disclose all facts, including those that do not meet the materiality\nthreshold.479 We are cognizant of the likelihood that some broker-dealers could provide lengthy\ndisclosures that do not meaningfully convey the material facts regarding the scope and terms of\nthe relationship and material facts regarding conflicts of interest, an outcome that could\nundermine the Commission\u2019s goal of facilitating disclosure to assist retail customers in making\nan informed investment decision.",
+    "perturbation": "negation_injection",
+    "changes": [],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0515",
+    "original_text": "The\nless data a bank has, the more conservative it must be in its estimation.",
+    "text": "The\nless data a bank has, the more conservative it must not be in its estimation.",
+    "perturbation": "negation_injection",
+    "changes": [
+      "\\bmust\\b -> must not"
+    ],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0376",
+    "original_text": "As with the \u201cform and manner\u201d of making disclosures, the Commission\ncontinues to believe that broker-dealers should have flexibility with respect to the \u201ctiming and\nfrequency\u201d of providing disclosure to determine the most appropriate and effective way to meet\nthe Disclosure Obligation.",
+    "text": "As with the \u201cform and manner\u201d of making disclosures, the Commission\ncontinues to believe that broker-dealers should have flexibility with respect to the \u201ctiming and\nfrequency\u201d of providing disclosure to determine the most appropriate and effective way to meet\nthe Disclosure Obligation.",
+    "perturbation": "negation_injection",
+    "changes": [],
+    "semantic_preserving": false
+  },
+  {
+    "original_clause_id": "OBL-0024",
+    "original_text": "The conditions set out in this paragraph must be satisfied at the inception of the covered bond\nand throughout its remaining maturity.",
+    "text": "The conditions set out in this paragraph must not be satisfied at the inception of the covered bond\nand throughout its remaining maturity.",
+    "perturbation": "negation_injection",
+    "changes": [
+      "\\bmust\\b -> must not"
+    ],
+    "semantic_preserving": false
+  }
+]

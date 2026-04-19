@@ -1,0 +1,35 @@
+{
+  "basel3": {
+    "RCC": 1.0,
+    "OAL": 0.7533,
+    "RIF": 0.5433,
+    "RIF_CI": [
+      0.5308,
+      0.5556
+    ],
+    "n": 758,
+    "CAS": 0.3225
+  },
+  "regbi": {
+    "RCC": 0.9199,
+    "OAL": 0.7706,
+    "RIF": 0.3816,
+    "RIF_CI": [
+      0.3682,
+      0.3954
+    ],
+    "n": 911,
+    "CAS": 0.3225
+  },
+  "gdpr": {
+    "RCC": 0.998,
+    "OAL": 0.8032,
+    "RIF": 0.4643,
+    "RIF_CI": null,
+    "n": 498,
+    "CAS": 0.3307
+  },
+  "CAS_basel_regbi_aligned": 1666,
+  "CAS_gdpr_aligned": 3514,
+  "CAS_basel_regbi_precision": 0.5359
+}

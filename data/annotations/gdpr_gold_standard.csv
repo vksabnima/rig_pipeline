@@ -1,0 +1,130 @@
+clause_id,doc_id,text,subject_gt,obligation_gt,condition_gt,threshold_gt,deadline_gt,exception_gt,human_reviewed
+OBL-0328,gdpr,"The lead supervisory authority shall, without delay, communicate the relevant information on the matter to the
+other supervisory authorities concerned.",The lead supervisory authority,communicate the relevant information on the matter to the other supervisory authorities concerned,,,without delay,,TRUE
+OBL-0058,gdpr,"Where point (a) of Article 6(1) applies, in relation to the offer of information society services directly to a child,
+the processing of the personal data of a child shall be lawful where the child is at least 16 years old.",entity offering information society services directly to a child,ensure processing of personal data of a child is lawful,where point (a) of Article 6(1) applies and in relation to the offer of information society services directly to a child,child is at least 16 years old,,,TRUE
+OBL-0013,gdpr,"A law as a basis for several processing operations based on a
+legal obligation to which the controller is subject or where processing is necessary for the performance of a task
+carried out in the public interest or in the exercise of an official authority may be sufficient.",controller,may use a law as basis for processing operations,processing is based on legal obligation to which the controller is subject or processing is necessary for performance of task carried out in public interest or exercise of official authority,,,,TRUE
+OBL-0380,gdpr,"The decision referred to in paragraph 1 shall be reasoned and addressed to the lead
+supervisory authority and all the supervisory authorities concerned and binding on them.",the decision referred to in paragraph 1,shall be reasoned and addressed to the lead supervisory authority and all the supervisory authorities concerned and binding on them,,,,,TRUE
+OBL-0141,gdpr,"Where Article 3(2) applies, the controller or the processor shall designate in writing a representative in the Union.",the controller or the processor,shall designate in writing a representative in the Union,Where Article 3(2) applies,,,,TRUE
+OBL-0126,gdpr,"Paragraph 1 shall not apply if the decision:
+(a) is necessary for entering into, or performance of, a contract between the data subject and a data controller;",data controller,Paragraph 1 shall not apply,"if the decision is necessary for entering into, or performance of, a contract between the data subject and a data controller",,,"decision is necessary for entering into, or performance of, a contract between the data subject and a data controller",TRUE
+OBL-0115,gdpr,"In exercising his or her right to data portability pursuant to paragraph 1, the data subject shall have the right to
+have the personal data transmitted directly from one controller to another, where technically feasible.",data subject,shall have the right to have the personal data transmitted directly from one controller to another,"In exercising his or her right to data portability pursuant to paragraph 1, where technically feasible",,,,TRUE
+OBL-0072,gdpr,"The controller shall take appropriate measures to provide any information referred to in Articles 13 and 14 and
+any communication under Articles 15 to 22 and 34 relating to processing to the data subject in a concise, transparent,
+intelligible and easily accessible form, using clear and plain language, in particular for any information addressed
+specifically to a child.",The controller,"shall take appropriate measures to provide any information referred to in Articles 13 and 14 and any communication under Articles 15 to 22 and 34 relating to processing to the data subject in a concise, transparent, intelligible and easily accessible form, using clear and plain language",relating to processing to the data subject,,,,TRUE
+OBL-0378,gdpr,"The binding decision shall concern all the matters which are the subject of the relevant and
+reasoned objection, in particular whether there is an infringement of this Regulation;",,"The binding decision shall concern all the matters which are the subject of the relevant and reasoned objection, in particular whether there is an infringement of this Regulation",relevant and reasoned objection exists,,,,TRUE
+OBL-0053,gdpr,The data subject shall have the right to withdraw his or her consent at any time.,data subject,shall have the right to withdraw his or her consent,at any time,,,,TRUE
+OBL-0347,gdpr,Information exchanged shall be used only for the purpose for which it was requested.,,use information exchanged only for the purpose for which it was requested,when information is exchanged,,,,TRUE
+OBL-0457,gdpr,"Member States shall lay down the rules on other penalties applicable to infringements of this Regulation in
+particular for infringements which are not subject to administrative fines pursuant to Article 83, and shall take all
+measures necessary to ensure that they are implemented.",Member States,shall lay down the rules on other penalties applicable to infringements of this Regulation and shall take all measures necessary to ensure that they are implemented,for infringements which are not subject to administrative fines pursuant to Article 83,,,,TRUE
+OBL-0280,gdpr,"The controller or processor shall document the assessment as well as the suitable safeguards referred to in the
+second subparagraph of paragraph 1 of this Article in the records referred to in Article 30.",controller or processor,shall document the assessment as well as the suitable safeguards referred to in the second subparagraph of paragraph 1 of this Article in the records referred to in Article 30,,,,,TRUE
+OBL-0045,gdpr,"Point (f) of the first subparagraph shall not apply to processing carried out by public authorities in the performance of
+their tasks.",public authorities,exemption from Point (f) of the first subparagraph,processing carried out in the performance of their tasks,,,Point (f) of the first subparagraph shall not apply,TRUE
+OBL-0303,gdpr,"Without prejudice to Article 55, the supervisory authority of the main establishment or of the single establishment
+of the controller or processor shall be competent to act as lead supervisory authority for the cross-border processing
+carried out by that controller or processor in accordance with the procedure provided in Article 60.",supervisory authority of the main establishment or of the single establishment of the controller or processor,shall be competent to act as lead supervisory authority for the cross-border processing carried out by that controller or processor in accordance with the procedure provided in Article 60,cross-border processing carried out by that controller or processor,,,Without prejudice to Article 55,TRUE
+OBL-0217,gdpr,"Where a draft code of conduct relates to processing activities in several Member States, the supervisory authority
+which is competent pursuant to Article 55 shall, before approving the draft code, amendment or extension, submit it in
+the procedure referred to in Article 63 to the Board which shall provide an opinion on whether the draft code,
+amendment or extension complies with this Regulation or, in the situation referred to in paragraph 3 of this Article,
+provides appropriate safeguards.",supervisory authority which is competent pursuant to Article 55,"submit the draft code, amendment or extension in the procedure referred to in Article 63 to the Board before approving it",where a draft code of conduct relates to processing activities in several Member States,several Member States,"before approving the draft code, amendment or extension",,TRUE
+OBL-0017,gdpr,"Where the personal data are collected from the
+data subject, the data subject should also be informed whether he or she is obliged to provide the personal data
+and of the consequences, where he or she does not provide such data.",data controller,inform the data subject whether he or she is obliged to provide the personal data and of the consequences where he or she does not provide such data,where the personal data are collected from the data subject,,,,TRUE
+OBL-0016,gdpr,"Therefore, this Regulation should provide for
+harmonised conditions for the processing of special categories of personal data concerning health, in respect of
+specific needs, in particular where the processing of such data is carried out for certain health-related purposes
+4.5.2016 EN Official Journal of the European Union L 119/11
+by persons subject to a legal obligation of professional secrecy.",persons subject to a legal obligation of professional secrecy,provide for harmonised conditions for the processing of special categories of personal data concerning health,"in respect of specific needs, in particular where the processing of such data is carried out for certain health-related purposes",,,,TRUE
+OBL-0048,gdpr,"The Union or the Member State law shall meet an objective of
+public interest and be proportionate to the legitimate aim pursued.",The Union or the Member State law,shall meet an objective of public interest and be proportionate to the legitimate aim pursued,,,,,TRUE
+OBL-0112,gdpr,"Article 19
+Notification obligation regarding rectification or erasure of personal data or restriction of
+processing
+The controller shall communicate any rectification or erasure of personal data or restriction of processing carried out in
+accordance with Article 16, Article 17(1) and Article 18 to each recipient to whom the personal data have been
+disclosed, unless this proves impossible or involves disproportionate effort.",The controller,"shall communicate any rectification or erasure of personal data or restriction of processing carried out in accordance with Article 16, Article 17(1) and Article 18 to each recipient to whom the personal data have been disclosed","rectification or erasure of personal data or restriction of processing carried out in accordance with Article 16, Article 17(1) and Article 18",,,unless this proves impossible or involves disproportionate effort,TRUE
+OBL-0120,gdpr,"The controller shall no longer process the personal data unless the controller demonstrates
+compelling legitimate grounds for the processing which override the interests, rights and freedoms of the data subject or
+for the establishment, exercise or defence of legal claims.",the controller,shall no longer process the personal data,,,,"unless the controller demonstrates compelling legitimate grounds for the processing which override the interests, rights and freedoms of the data subject or for the establishment, exercise or defence of legal claims",TRUE
+OBL-0259,gdpr,"Those implementing acts shall be adopted in accordance with
+the examination procedure referred to in Article 93(2).",Those implementing acts,shall be adopted in accordance with the examination procedure referred to in Article 93(2),,,,,TRUE
+OBL-0309,gdpr,"Where the lead supervisory authority decides not to handle the case, the supervisory authority which informed the
+lead supervisory authority shall handle it according to Articles 61 and 62.",the supervisory authority which informed the lead supervisory authority,shall handle it according to Articles 61 and 62,Where the lead supervisory authority decides not to handle the case,,,,TRUE
+OBL-0014,gdpr,"However, such transmission in the legitimate interest of the
+controller or further processing of personal data should be prohibited if the processing is not compatible with a
+legal, professional or other binding obligation of secrecy.",controller,transmission in the legitimate interest of the controller or further processing of personal data should be prohibited,"if the processing is not compatible with a legal, professional or other binding obligation of secrecy",,,,TRUE
+OBL-0288,gdpr,"The member or members of each supervisory authority shall, in the performance of their tasks and exercise of
+their powers in accordance with this Regulation, remain free from external influence, whether direct or indirect, and
+shall neither seek nor take instructions from anybody.",member or members of each supervisory authority,remain free from external influence and neither seek nor take instructions from anybody,in the performance of their tasks and exercise of their powers in accordance with this Regulation,,,,TRUE
+OBL-0102,gdpr,"Section 3
+Rectification and erasure
+Article 16
+Right to rectification
+The data subject shall have the right to obtain from the controller without undue delay the rectification of inaccurate
+personal data concerning him or her.",controller,provide rectification of inaccurate personal data,upon request from data subject,,without undue delay,,TRUE
+OBL-0367,gdpr,"To that end, the competent supervisory authority shall communicate the draft decision to the Board, when it:
+(a) aims to adopt a list of the processing operations subject to the requirement for a data protection impact assessment
+pursuant to Article 35(4);",competent supervisory authority,communicate the draft decision to the Board,when it aims to adopt a list of the processing operations subject to the requirement for a data protection impact assessment pursuant to Article 35(4),,,,TRUE
+OBL-0333,gdpr,"Where none of the other supervisory authorities concerned has objected to the draft decision submitted by the
+lead supervisory authority within the period referred to in paragraphs 4 and 5, the lead supervisory authority and the
+supervisory authorities concerned shall be deemed to be in agreement with that draft decision and shall be bound by it.",lead supervisory authority and the supervisory authorities concerned,shall be deemed to be in agreement with that draft decision and shall be bound by it,Where none of the other supervisory authorities concerned has objected to the draft decision submitted by the lead supervisory authority within the period referred to in paragraphs 4 and 5,,within the period referred to in paragraphs 4 and 5,,TRUE
+OBL-0360,gdpr,"The Member State in whose territory the damage was caused shall make good such damage under the conditions
+applicable to damage caused by its own staff.",The Member State in whose territory the damage was caused,shall make good such damage under the conditions applicable to damage caused by its own staff,damage was caused in the Member State's territory,,,,TRUE
+OBL-0215,gdpr,"The supervisory authority shall provide an opinion on whether the
+draft code, amendment or extension complies with this Regulation and shall approve that draft code, amendment or
+extension if it finds that it provides sufficient appropriate safeguards.",supervisory authority,"shall provide an opinion on whether the draft code, amendment or extension complies with this Regulation and shall approve that draft code, amendment or extension",if it finds that it provides sufficient appropriate safeguards,,,,TRUE
+OBL-0113,gdpr,"The controller shall inform the data subject
+about those recipients if the data subject requests it.",The controller,shall inform the data subject about those recipients,if the data subject requests it,,,,TRUE
+OBL-0230,gdpr,The certification shall be voluntary and available via a process that is transparent.,,The certification shall be voluntary and available via a process that is transparent,,,,,TRUE
+OBL-0302,gdpr,"Supervisory authorities shall not be competent to supervise processing operations of courts acting in their judicial
+capacity.",Supervisory authorities,shall not be competent to supervise processing operations,of courts acting in their judicial capacity,,,,TRUE
+OBL-0143,gdpr,"The representative shall be established in one of the Member States where the data subjects, whose personal data
+are processed in relation to the offering of goods or services to them, or whose behaviour is monitored, are.",The representative,shall be established in one of the Member States,"where the data subjects, whose personal data are processed in relation to the offering of goods or services to them, or whose behaviour is monitored, are",,,,TRUE
+OBL-0415,gdpr,"The annual report shall include a review of the practical application of the guidelines, recommendations and best
+practices referred to in point (l) of Article 70(1) as well as of the binding decisions referred to in Article 65.",,"include a review of the practical application of the guidelines, recommendations and best practices referred to in point (l) of Article 70(1) as well as of the binding decisions referred to in Article 65",The annual report,,annual,,TRUE
+OBL-0446,gdpr,"Court proceedings for exercising the right to receive compensation shall be brought before the courts competent
+under the law of the Member State referred to in Article 79(2).",Court proceedings for exercising the right to receive compensation,shall be brought before the courts competent under the law of the Member State referred to in Article 79(2),for exercising the right to receive compensation,,,,TRUE
+OBL-0004,gdpr,"4.5.2016 EN Official Journal of the European Union L 119/5
+(23) In order to ensure that natural persons are not deprived of the protection to which they are entitled under this
+Regulation, the processing of personal data of data subjects who are in the Union by a controller or a processor
+not established in the Union should be subject to this Regulation where the processing activities are related to
+offering goods or services to such data subjects irrespective of whether connected to a payment.",controller or a processor not established in the Union,processing of personal data of data subjects who are in the Union should be subject to this Regulation,where the processing activities are related to offering goods or services to such data subjects irrespective of whether connected to a payment,,,,TRUE
+OBL-0389,gdpr,"The final
+decision of the supervisory authorities concerned shall be adopted under the terms of Article 60(7), (8) and (9).",supervisory authorities,"adopt the final decision under the terms of Article 60(7), (8) and (9)",,,,,TRUE
+OBL-0413,gdpr,"The Board shall draw up an annual report regarding the protection of natural persons with regard to processing in
+the Union and, where relevant, in third countries and international organisations.",The Board,draw up an annual report regarding the protection of natural persons with regard to processing,"in the Union and, where relevant, in third countries and international organisations",,annual,,TRUE
+OBL-0082,gdpr,Where the icons are presented electronically they shall be machine-readable.,,icons shall be machine-readable,where the icons are presented electronically,,,,TRUE
+OBL-0358,gdpr,"The
+seconding supervisory authority's members or staff shall be subject to the Member State law of the host supervisory
+authority.",The seconding supervisory authority's members or staff,shall be subject to the Member State law of the host supervisory authority,,,,,TRUE
+OBL-0175,gdpr,"That documentation shall enable the supervisory authority to verify
+compliance with this Article.",the supervisory authority,shall enable verification of compliance with this Article,documentation,,,,TRUE
+OBL-0080,gdpr,"Information provided under Articles 13 and 14 and any communication and any actions taken under Articles 15
+to 22 and 34 shall be provided free of charge.",regulated entity providing information and communications,"shall provide information, communications, and actions free of charge",when providing information under Articles 13 and 14 and any communication and actions taken under Articles 15 to 22 and 34,,,,TRUE
+OBL-0111,gdpr,"A data subject who has obtained restriction of processing pursuant to paragraph 1 shall be informed by the
+controller before the restriction of processing is lifted.",controller,shall inform the data subject before the restriction of processing is lifted,data subject has obtained restriction of processing pursuant to paragraph 1,,before the restriction of processing is lifted,,TRUE
+OBL-0491,gdpr,"In the context of the evaluations and reviews referred to in paragraph 1, the Commission shall examine, in
+particular, the application and functioning of:
+(a) Chapter V on the transfer of personal data to third countries or international organisations with particular regard to
+decisions adopted pursuant to Article 45(3) of this Regulation and decisions adopted on the basis of Article 25(6) of
+Directive 95/46/EC;",the Commission,"shall examine, in particular, the application and functioning of Chapter V on the transfer of personal data to third countries or international organisations with particular regard to decisions adopted pursuant to Article 45(3) of this Regulation and decisions adopted on the basis of Article 25(6) of Directive 95/46/EC",In the context of the evaluations and reviews referred to in paragraph 1,,,,TRUE
+OBL-0391,gdpr,The final decision shall attach the decision referred to in paragraph 1 of this Article.,The final decision,shall attach the decision referred to in paragraph 1 of this Article,,,,,TRUE
+OBL-0173,gdpr,"The notification referred to in paragraph 1 shall at least:
+(a) describe the nature of the personal data breach including where possible, the categories and approximate number of
+data subjects concerned and the categories and approximate number of personal data records concerned;",,"describe the nature of the personal data breach including where possible, the categories and approximate number of data subjects concerned and the categories and approximate number of personal data records concerned",The notification referred to in paragraph 1,,,where possible,TRUE
+OBL-0195,gdpr,"The
+supervisory authority shall inform the controller and, where applicable, the processor, of any such extension within one
+month of receipt of the request for consultation together with the reasons for the delay.",supervisory authority,"shall inform the controller and, where applicable, the processor, of any such extension together with the reasons for the delay",of any such extension,,within one month of receipt of the request for consultation,,TRUE
+OBL-0050,gdpr,"Where processing is based on consent, the controller shall be able to demonstrate that the data subject has
+consented to processing of his or her personal data.",controller,shall be able to demonstrate that the data subject has consented to processing of his or her personal data,where processing is based on consent,,,,TRUE
+OBL-0184,gdpr,"The supervisory authority shall establish and make public a list of the kind of processing operations which are
+subject to the requirement for a data protection impact assessment pursuant to paragraph 1.",supervisory authority,establish and make public a list of the kind of processing operations which are subject to the requirement for a data protection impact assessment,pursuant to paragraph 1,,,,TRUE

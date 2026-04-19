@@ -1,0 +1,56 @@
+[
+  {
+    "model": "gpt-4o",
+    "document": "basel3",
+    "RCC": 0.996,
+    "OAL": 0.4681,
+    "RIF": 0.5085,
+    "CAS": 0.3263,
+    "HRR": 0.3924
+  },
+  {
+    "model": "gpt-4o",
+    "document": "regbi",
+    "RCC": 0.8178,
+    "OAL": 0.4022,
+    "RIF": 0.4421,
+    "CAS": 0.3263,
+    "HRR": 0.3924
+  },
+  {
+    "model": "claude-sonnet",
+    "document": "basel3",
+    "RCC": 0.971,
+    "OAL": 0.4765,
+    "RIF": 0.5895,
+    "CAS": 0.3225,
+    "HRR": 0.4326
+  },
+  {
+    "model": "claude-sonnet",
+    "document": "regbi",
+    "RCC": 0.899,
+    "OAL": 0.4503,
+    "RIF": 0.5198,
+    "CAS": 0.3225,
+    "HRR": 0.4326
+  },
+  {
+    "model": "llama3.2",
+    "document": "basel3",
+    "RCC": 0.0633,
+    "OAL": 0.031,
+    "RIF": 0.034,
+    "CAS": 0.3145,
+    "HRR": 0.5361
+  },
+  {
+    "model": "llama3.2",
+    "document": "regbi",
+    "RCC": 0.0461,
+    "OAL": 0.0237,
+    "RIF": 0.1088,
+    "CAS": 0.3145,
+    "HRR": 0.5361
+  }
+]

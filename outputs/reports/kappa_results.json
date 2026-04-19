@@ -1,0 +1,50 @@
+{
+  "n_clauses": 100,
+  "n_with_any_human_label": 97,
+  "per_field": {
+    "subject": {
+      "n": 100,
+      "presence_agreement": 0.84,
+      "presence_kappa": 0.1862,
+      "n_both_present": 81,
+      "content_alignment_when_both_present": 0.5432
+    },
+    "obligation": {
+      "n": 100,
+      "presence_agreement": 0.87,
+      "presence_kappa": 0.0,
+      "n_both_present": 87,
+      "content_alignment_when_both_present": 0.4023
+    },
+    "condition": {
+      "n": 100,
+      "presence_agreement": 0.8,
+      "presence_kappa": 0.2565,
+      "n_both_present": 74,
+      "content_alignment_when_both_present": 0.3919
+    },
+    "threshold": {
+      "n": 100,
+      "presence_agreement": 0.65,
+      "presence_kappa": 0.2391,
+      "n_both_present": 16,
+      "content_alignment_when_both_present": 0.5
+    },
+    "deadline": {
+      "n": 100,
+      "presence_agreement": 0.65,
+      "presence_kappa": -0.0057,
+      "n_both_present": 3,
+      "content_alignment_when_both_present": 0.0
+    },
+    "exception": {
+      "n": 100,
+      "presence_agreement": 0.92,
+      "presence_kappa": 0.1853,
+      "n_both_present": 1,
+      "content_alignment_when_both_present": 0.0
+    }
+  },
+  "overall_presence_kappa": 0.5739,
+  "overall_content_alignment_when_both_present": 0.4427
+}

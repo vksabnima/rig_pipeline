@@ -1,0 +1,34 @@
+{
+  "total_samples": 250,
+  "by_perturbation": {
+    "synonym_swap": {
+      "total": 50,
+      "with_changes": 39,
+      "change_rate": 0.78
+    },
+    "negation_injection": {
+      "total": 50,
+      "with_changes": 29,
+      "change_rate": 0.58
+    },
+    "clause_reorder": {
+      "total": 50,
+      "with_changes": 50,
+      "change_rate": 1.0
+    },
+    "threshold_mutation": {
+      "total": 50,
+      "with_changes": 24,
+      "change_rate": 0.48
+    },
+    "entity_substitution": {
+      "total": 50,
+      "with_changes": 23,
+      "change_rate": 0.46
+    }
+  },
+  "semantic_preserving_stability": 0.0,
+  "semantic_altering_detection": 0.0,
+  "semantic_preserving_count": 100,
+  "semantic_altering_count": 150
+}

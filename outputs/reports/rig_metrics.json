@@ -1,0 +1,45 @@
+{
+  "RCC": {
+    "metric": "RCC",
+    "full_name": "Regulatory Clause Coverage",
+    "value": 0.8987,
+    "extracted_valid": 1500,
+    "total_obligation_sentences": 1669,
+    "interpretation": "Proportion of obligation sentences successfully extracted and parsed"
+  },
+  "OAL": {
+    "metric": "OAL",
+    "full_name": "Obligation Alignment Level",
+    "value": 0.4681,
+    "method": "gold_standard_comparison",
+    "num_tuples": 1669,
+    "interpretation": "Alignment quality of extracted tuples with ground truth or internal consistency"
+  },
+  "RIF": {
+    "metric": "RIF",
+    "full_name": "Regulatory Intent Fidelity",
+    "value": 0.4723,
+    "num_tuples": 1669,
+    "interpretation": "How faithfully tuples preserve the regulatory intent of source clauses"
+  },
+  "CAS": {
+    "metric": "CAS",
+    "full_name": "Cross-document Alignment Score",
+    "value": 0.358,
+    "precision": 0.5967,
+    "recall": 0.0,
+    "num_alignments": 10,
+    "total_possible_pairs": 690538,
+    "interpretation": "Quality and coverage of cross-document obligation alignment"
+  },
+  "HRR": {
+    "metric": "HRR",
+    "full_name": "Hallucination Resistance Rate",
+    "value": 0.673,
+    "stability_rate": 0.766,
+    "detection_rate": 0.58,
+    "preserving_samples": 50,
+    "altering_samples": 50,
+    "interpretation": "Pipeline resistance to adversarial perturbations"
+  }
+}

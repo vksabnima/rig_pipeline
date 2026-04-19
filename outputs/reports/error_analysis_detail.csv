@@ -1,0 +1,56 @@
+clause_id,raw_text_snippet,failure_type,confidence,reason,rif_score
+OBL-0001,"General Obligation
+1.",CROSS_REFERENCE,0.95,The provided clause text 'General Obligation 1.' is just a header/reference that requires reading the actual regulatory text in another section to extract the substantive obligation details.,0.0
+OBL-0003,"Key Terms and Scope of Best Interest Obligation
+1.",CROSS_REFERENCE,0.9,"The clause text only shows a section header 'Key Terms and Scope of Best Interest Obligation' but the gold standard contains a detailed obligation about banks assessing counterparty performance, indicating the actual obligation content is referenced elsewhere in the document.",0.0
+OBL-0004,"Disclosure Obligation
+2.",CROSS_REFERENCE,0.9,"The clause text only contains a header 'Disclosure Obligation 2.' with no substantive content, making the obligation only interpretable via reference to other regulatory text.",0.0
+OBL-0006,"Compliance Obligation
+D.",IMPLICIT_SUBJECT,0.95,The extracted tuple is completely empty while the gold standard shows a clear subject 'supervisors' that must be implied from context since it's not stated in the minimal clause text provided.,0.0
+OBL-0007,"Disclosure Obligation
+3.",CROSS_REFERENCE,0.9,"The clause text only shows a header 'Disclosure Obligation 3.' without the actual regulatory content, indicating the full obligation text with subject 'ECA' and specific requirements exists in another paragraph that wasn't provided.",0.0
+OBL-0008,"Care Obligation
+3
+4.",CROSS_REFERENCE,0.9,"The clause text only shows 'Care Obligation 3 4.' which appears to be a section reference rather than the full obligation content, requiring reference to another paragraph to understand the complete requirement.",0.0
+OBL-0009,"Conflict of Interest Obligation
+5.",CROSS_REFERENCE,0.9,"The clause text only shows a header 'Conflict of Interest Obligation 5.' with no actual content, requiring reference to the full paragraph to understand the complete obligation about MDBs and AAA rating criteria.",0.0
+OBL-0010,"Compliance Obligation
+6.",CROSS_REFERENCE,0.9,The obligation contains 'in accordance with paragraph 21' making it only interpretable via another paragraph reference.,0.0
+OBL-0011,"Disclosure Obligation
+2.",CROSS_REFERENCE,0.9,"The clause text only shows a header 'Disclosure Obligation 2.' without the actual obligation content, indicating the full obligation text is located elsewhere and requires cross-referencing to interpret.",0.0
+OBL-0013,"Compliance Obligation
+5.",CROSS_REFERENCE,0.9,"The clause text only contains a header 'Compliance Obligation 5.' without the actual obligation content, indicating the full obligation text is located elsewhere and requires cross-referencing to interpret.",0.0
+OBL-0014,"Disclosure Obligation
+2.",CROSS_REFERENCE,0.9,"The provided clause text 'Disclosure Obligation 2.' appears to be just a header or reference, while the gold standard shows complete regulatory content that must be located elsewhere in the document.",0.0
+OBL-0016,"Compliance Obligation
+5.",CROSS_REFERENCE,0.95,"The obligation references 'Grade A in paragraphs 22 and 23' making it only interpretable via cross-reference to other paragraphs, and the provided clause text appears incomplete or truncated.",0.0
+OBL-0021,The Commission is statutorily obligated to respond to the recommendations of the,CROSS_REFERENCE,0.95,"The clause describes responding to recommendations 'in this section and throughout the adopting release in the relevant sections' with multiple specific cross-references to other sections, making the obligation only interpretable via other paragraphs.",0.0
+OBL-0048,"After careful consideration of the comments
+and additional information we have r",CROSS_REFERENCE,0.95,The clause text is general commentary about regulation implementation while the gold standard annotation contains specific technical obligations about debt/equity classification that must be defined elsewhere in the regulatory document.,0.0
+OBL-0049,"36 If any of the provisions of these rules, or the application thereof to any pe",CROSS_REFERENCE,0.9,"The clause text about rule validity provisions is completely unrelated to the gold standard annotation about share issuance obligations, indicating a reference mismatch between different regulatory sections.",0.0
+OBL-0065,We are adopting the Care Obligation largely as proposed;,CROSS_REFERENCE,0.9,The clause 'We are adopting the Care Obligation largely as proposed' refers to an obligation defined elsewhere and is not interpretable without that external reference.,0.0
+OBL-0094,"See also Waters Letter (stating that the proposal fails
+to adequately explain ju",CROSS_REFERENCE,0.95,"The clause text begins with 'See also Waters Letter' and references external documents, making the obligation only interpretable via another source, while the extracted tuple is completely empty.",0.0
+OBL-0095,"IAC 2018 Recommendation (stating “we recognize that the
+Commission has chosen no",CROSS_REFERENCE,0.95,The clause text appears to be commentary/recommendations about Commission proposals rather than containing the actual regulatory obligation about external ratings that was annotated in the gold standard.,0.0
+OBL-0099,"For that reason, as well as the other reasons
+set forth above, the Commission do",CROSS_REFERENCE,0.95,"The clause references 'other reasons set forth above' and discusses obligations that are defined elsewhere, making it uninterpretable without cross-referencing other paragraphs.",0.0
+OBL-0116,"First, in response to comments, we are clarifying the relationship between the G",CROSS_REFERENCE,0.95,The clause only discusses clarifying relationships between obligations described in another section (Section II.C) and contains no extractable regulatory obligation itself.,0.0
+OBL-0120,"In particular, whether a broker-dealer’s recommendation satisfies
+the requiremen",CROSS_REFERENCE,0.9,"The clause refers to 'Care Obligation' requirements that are defined elsewhere, making the obligation uninterpretable without cross-referencing another section.",0.0
+OBL-0122,"While these
+practices will not be per se prohibited by Regulation Best Interest,",CROSS_REFERENCE,0.95,"The clause text discusses practices in relation to 'Regulation Best Interest' without defining what those practices are, requiring reference to other regulatory sections for interpretation.",0.0
+OBL-0123,"Key Terms and Scope of Best Interest Obligation
+1.",IMPLICIT_SUBJECT,0.95,"The gold standard shows subject_gt as blank, indicating the subject responsible for applying the capital requirement is implied by context rather than explicitly stated in the clause text.",0.0
+OBL-0150,"Department of
+Labor Regulatory Agenda, Fiduciary Rule and Prohibited Transaction",CROSS_REFERENCE,0.95,"The clause text is a regulatory agenda reference/citation that doesn't contain the actual obligation content, requiring reference to another document to interpret the regulatory requirement.",0.0
+OBL-0159,"Whether a
+broker-dealer has acted in the retail customer’s best interest under t",CROSS_REFERENCE,0.95,"The gold standard obligation contains 'in accordance with the rules for proportional cover described in paragraph 202', indicating the obligation requires cross-referencing another paragraph for interpretation.",0.0
+OBL-0173,"As a general matter, the Relationship Summary reflects an initial layer of discl",CROSS_REFERENCE,0.9,"The gold standard obligation references 'paragraph 195' requirements, indicating the obligation can only be interpreted by referencing another paragraph.",0.0
+OBL-0199,"It would be possible,
+but would be unlikely for most broker-dealers, for the abb",CROSS_REFERENCE,0.95,"The clause text about broker-dealers and Relationship Summary disclosure is completely unrelated to the gold standard annotation about supervisory concurrence on qualifying revolving retail exposures, indicating a cross-reference or mislabeling error.",0.0
+OBL-0201,Several commenters requested additional guidance on how dual-registrants and the,CROSS_REFERENCE,0.95,"The clause text discusses commenters' feedback on disclosure obligations but contains no actual regulatory obligation, while the gold standard references a completely different banking regulation that must be defined elsewhere.",0.0
+OBL-0204,"Although some commenters
+expressed concerns about potential investor confusion c",CROSS_REFERENCE,0.95,"The clause text discusses disclosure obligations in general terms without specifying concrete requirements, while the gold standard refers to specific IRB approach standards that must be defined elsewhere in the regulation.",0.0
+OBL-0209,"As a result, most retail investors cannot easily distinguish between
+financial a",IMPLICIT_SUBJECT,0.95,"The clause text discusses retail investors distinguishing between financial advisers but contains no obligation, while the gold standard shows an obligation about banks calculating maturity that is completely absent from the provided text.",0.0
