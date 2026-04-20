@@ -895,7 +895,7 @@ Model & Doc & RCC & OAL & RIF$^\ast$ [95\,\% CI] & CAS & HRR$^\ddagger$
 %% Text Row 0: Llama-3-8B
 \node[font=\scriptsize\bfseries,text=white] at (0.5*\cw,0.5*\ch){0.998};
 \node[font=\scriptsize\bfseries,text=white] at (1.5*\cw,0.5*\ch){0.820};
-\node[font=\scriptsize,text=black] at (2.5*\cw,0.5*\ch){0.457};
+\node[font=\scriptsize,text=white] at (2.5*\cw,0.5*\ch){0.526};
 \node[font=\scriptsize,text=black] at (3.5*\cw,0.5*\ch){0.360};
 \node[font=\scriptsize,text=black] at (4.5*\cw,0.5*\ch){0.514};
 \node[font=\scriptsize\bfseries,text=white] at (5.5*\cw,0.5*\ch){1.000};
@@ -903,7 +903,7 @@ Model & Doc & RCC & OAL & RIF$^\ast$ [95\,\% CI] & CAS & HRR$^\ddagger$
 %% Text Row 1: GPT-4o
 \node[font=\scriptsize,text=white] at (0.5*\cw,1.5*\ch){0.907};
 \node[font=\scriptsize,text=white] at (1.5*\cw,1.5*\ch){0.665};
-\node[font=\scriptsize,text=black] at (2.5*\cw,1.5*\ch){0.452};
+\node[font=\scriptsize,text=white] at (2.5*\cw,1.5*\ch){0.510};
 \node[font=\scriptsize,text=black] at (3.5*\cw,1.5*\ch){0.326};
 \node[font=\scriptsize,text=black] at (4.5*\cw,1.5*\ch){0.392};
 \node[font=\scriptsize\bfseries,text=white] at (5.5*\cw,1.5*\ch){1.000};
@@ -911,7 +911,7 @@ Model & Doc & RCC & OAL & RIF$^\ast$ [95\,\% CI] & CAS & HRR$^\ddagger$
 %% Text Row 2: Qwen3-235B
 \node[font=\scriptsize,text=white] at (0.5*\cw,2.5*\ch){0.960};
 \node[font=\scriptsize,text=white] at (1.5*\cw,2.5*\ch){0.762};
-\node[font=\scriptsize,text=black] at (2.5*\cw,2.5*\ch){0.463};
+\node[font=\scriptsize,text=white] at (2.5*\cw,2.5*\ch){0.516};
 \node[font=\scriptsize,text=black] at (3.5*\cw,2.5*\ch){0.323};
 \node[font=\scriptsize,text=black] at (4.5*\cw,2.5*\ch){0.461};
 \node[font=\scriptsize\bfseries,text=white] at (5.5*\cw,2.5*\ch){1.000};
@@ -919,7 +919,7 @@ Model & Doc & RCC & OAL & RIF$^\ast$ [95\,\% CI] & CAS & HRR$^\ddagger$
 %% Text Row 3: Claude Sonnet
 \node[font=\scriptsize,text=white] at (0.5*\cw,3.5*\ch){0.935};
 \node[font=\scriptsize,text=white] at (1.5*\cw,3.5*\ch){0.737};
-\node[font=\scriptsize,text=white] at (2.5*\cw,3.5*\ch){0.504};
+\node[font=\scriptsize,text=white] at (2.5*\cw,3.5*\ch){0.551};
 \node[font=\scriptsize,text=black] at (3.5*\cw,3.5*\ch){0.323};
 \node[font=\scriptsize,text=black] at (4.5*\cw,3.5*\ch){0.433};
 \node[font=\scriptsize\bfseries,text=white] at (5.5*\cw,3.5*\ch){1.000};
@@ -1051,7 +1051,46 @@ presence~$\kappa$ rises from the pilot value of 0.574 to
 content alignment rises substantially from 0.443 to \textbf{0.713}
 --- a consequence of the revised annotation protocol's explicit
 field-decision rules and worked examples, which nearly halved
-annotator content-drift relative to the pilot. Per-field $\kappa$
+annotator content-drift relative to the pilot.
+Table~\ref{tab:protocol_effect} isolates the protocol effect by
+computing per-field $\kappa$ and content alignment separately on
+the 100-clause pilot (ad-hoc protocol) and the 300-clause
+protocol-controlled expansion: on every field the content-alignment
+score rose sharply, with subject and condition rising from
+0.54~/~0.39 to 1.00~/~0.91 respectively, and the low-frequency
+deadline and exception fields rising from near-zero alignment
+(small-$n$ instability) to 1.00 with the larger both-present samples.
+
+\begin{table}[!htbp]
+\caption{Effect of the revised annotation protocol on per-field
+inter-annotator agreement. Pilot used an ad-hoc annotation
+protocol on 100 clauses; the protocol-controlled expansion used
+explicit field-decision rules and worked examples
+(\texttt{ANNOTATION\_GUIDE.md}) on an additional 300 clauses.
+Content alignment rose sharply on every field, indicating that
+definitional drift (not task difficulty) was the dominant source
+of disagreement in the pilot.}
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcccccc}
+\toprule
+& \multicolumn{3}{c}{Pilot (100 clauses)} & \multicolumn{3}{c}{Protocol (300 clauses)} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+Field & $\kappa$ & $n_{\text{b.p.}}$ & C.A. & $\kappa$ & $n_{\text{b.p.}}$ & C.A. \\
+\midrule
+subject     & 0.144  & 81 & 0.543 & 0.128 & 132 & \textbf{1.000} \\
+obligation  & 0.000  & 87 & 0.402 & 0.000 & 282 & \textbf{0.727} \\
+condition   & 0.251  & 74 & 0.392 & 0.265 & 118 & \textbf{0.907} \\
+threshold   & 0.248  & 16 & 0.500 & 0.394 & 16  & \textbf{0.812} \\
+deadline    & $-$0.011 & 3  & 0.000 & 0.550 & 11  & \textbf{1.000} \\
+exception   & 0.185  & 1  & 0.000 & 0.656 & 6   & \textbf{1.000} \\
+\midrule
+Pooled      & 0.587  & 262 & 0.443 & 0.614 & 565 & \textbf{0.839} \\
+\bottomrule
+\end{tabular}
+\label{tab:protocol_effect}
+\end{table} Per-field $\kappa$
 remains depressed on high-frequency fields (subject, obligation)
 because both raters mark these present in over 90\% of clauses,
 leaving little room for chance-corrected agreement to register; the
@@ -1079,9 +1118,13 @@ picture is \emph{document-dependent}, not universal.
 On \textbf{Basel~III} (rule-dense, quantitative) Claude~Sonnet
 achieves statistically significantly higher RIF than GPT-4o
 (0.616~[0.600,~0.632] vs.\ 0.564~[0.551,~0.576], gap~$=0.052$,
-non-overlapping CIs), with Qwen3-235B (0.543 [0.531, 0.556]) and
-Llama-3-8B (0.549 [0.538, 0.561]) landing between the two closed
-models with no significant ordering among the open-model pair.
+non-overlapping CIs). Qwen3-235B (0.543 [0.531, 0.556]) and
+Llama-3-8B (0.549 [0.538, 0.561]) both sit below GPT-4o at the
+point estimate but overlap GPT-4o's CI (a 0.005-wide overlap at
+the top of each open-model CI), so Claude~Sonnet is the only model
+that is statistically ahead of the remaining three; the
+GPT-4o~/~Qwen3~/~Llama-3-8B cluster is within a 0.021 point-estimate
+range with pairwise overlapping CIs.
 
 On \textbf{Reg~BI} (100-clause independent human gold,
 conduct-based) all four models are \emph{statistically tied}:
@@ -1103,6 +1146,72 @@ fidelity is therefore document-dependent --- rule-dense, specificity-
 sensitive text (Basel~III) surfaces a measurable gap between frontier
 closed models, while conduct-based text (Reg~BI) and structurally-
 clean text (GDPR) do not distinguish them under the metrics we use.
+Figure~\ref{fig:rif_by_doc} visualises this pattern: Claude~Sonnet's
+Basel~III error bar sits cleanly above the other three
+(non-overlapping), whereas on Reg~BI and GDPR all model error bars
+overlap substantially.
+
+\begin{figure}[!htbp]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  ybar, bar width=0.24cm,
+  width=0.92\textwidth, height=6.5cm,
+  xlabel={Document (independent human-validated gold)},
+  ylabel={RIF (95\% bootstrap CI)},
+  ymin=0.35, ymax=0.70,
+  symbolic x coords={Basel III, Reg BI, GDPR},
+  xtick=data,
+  enlarge x limits=0.25,
+  tick label style={font=\scriptsize},
+  label style={font=\small},
+  legend style={font=\scriptsize, at={(0.02,0.98)}, anchor=north west,
+                legend columns=2, column sep=4pt},
+  grid=y, grid style={dotted,gray!35},
+  error bars/error bar style={line width=0.7pt},
+  error bars/error mark options={rotate=90, mark size=1.7pt, line width=0.7pt},
+]
+\addplot+[fill=navyblue!80, draw=navyblue, error bars/.cd, y dir=both, y explicit]
+  coordinates {
+    (Basel III, 0.564) +- (0, 0.012)
+    (Reg BI,    0.457) +- (0, 0.053)
+    (GDPR,      0.533) +- (0, 0.061)
+  };
+\addlegendentry{GPT-4o}
+\addplot+[fill=burntorange!80, draw=burntorange, error bars/.cd, y dir=both, y explicit]
+  coordinates {
+    (Basel III, 0.616) +- (0, 0.016)
+    (Reg BI,    0.486) +- (0, 0.054)
+  };
+\addlegendentry{Claude Sonnet$^{\flat}$}
+\addplot+[fill=steelblue!70, draw=steelblue, error bars/.cd, y dir=both, y explicit]
+  coordinates {
+    (Basel III, 0.543) +- (0, 0.012)
+    (Reg BI,    0.489) +- (0, 0.056)
+    (GDPR,      0.519) +- (0, 0.062)
+  };
+\addlegendentry{Qwen3-235B}
+\addplot+[fill=forestgreen!70, draw=forestgreen!80!black, error bars/.cd, y dir=both, y explicit]
+  coordinates {
+    (Basel III, 0.549) +- (0, 0.011)
+    (Reg BI,    0.503) +- (0, 0.053)
+    (GDPR,      0.502) +- (0, 0.057)
+  };
+\addlegendentry{Llama-3-8B}
+\end{axis}
+\end{tikzpicture}
+\caption{\textbf{Document-dependent RIF ordering.} Per-model RIF
+with 95\% bootstrap confidence-interval error bars, computed against
+three independent human-validated gold sets (Basel~III $n=758$,
+Reg~BI $n=100$, GDPR $n=50$). Claude~Sonnet's Basel~III bar is the
+only bar without CI overlap with any other model; on Reg~BI all four
+bars overlap pairwise, and on GDPR the three compared models
+(Claude~Sonnet excluded for self-evaluation circularity) also
+overlap pairwise. GDPR values for Claude~Sonnet are reported as a
+self-consistency measurement only ($0.538$, not directly comparable)
+and are omitted from this figure.}
+\label{fig:rif_by_doc}
+\end{figure}
 
 \subsection{GDPR Obligation Structure and OAL Elevation}
 
