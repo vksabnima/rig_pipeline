@@ -1,0 +1,114 @@
+{
+  "HRR_detection": 1.0,
+  "HRR_stability": 0.4127,
+  "HRR_eq11": 0.5142,
+  "detection_details": {
+    "hrr_detection": 1.0,
+    "correct_rejections": 15,
+    "total_baits": 15,
+    "details": [
+      {
+        "bait_idx": 0,
+        "op": false,
+        "conf": 1.0,
+        "correct": true
+      },
+      {
+        "bait_idx": 1,
+        "op": false,
+        "conf": 1.0,
+        "correct": true
+      },
+      {
+        "bait_idx": 2,
+        "op": false,
+        "conf": 1.0,
+        "correct": true
+      },
+      {
+        "bait_idx": 3,
+        "op": false,
+        "conf": 1.0,
+        "correct": true
+      },
+      {
+        "bait_idx": 4,
+        "op": false,
+        "conf": 1.0,
+        "correct": true
+      },
+      {
+        "bait_idx": 5,
+        "op": false,
+        "conf": 1.0,
+        "correct": true
+      },
+      {
+        "bait_idx": 6,
+        "op": false,
+        "conf": 1.0,
+        "correct": true
+      },
+      {
+        "bait_idx": 7,
+        "op": false,
+        "conf": 0.8,
+        "correct": true
+      },
+      {
+        "bait_idx": 8,
+        "op": false,
+        "conf": 1.0,
+        "correct": true
+      },
+      {
+        "bait_idx": 9,
+        "op": false,
+        "conf": 1.0,
+        "correct": true
+      },
+      {
+        "bait_idx": 10,
+        "op": false,
+        "conf": 1.0,
+        "correct": true
+      },
+      {
+        "bait_idx": 11,
+        "op": false,
+        "conf": 1.0,
+        "correct": true
+      },
+      {
+        "bait_idx": 12,
+        "op": false,
+        "conf": 1.0,
+        "correct": true
+      },
+      {
+        "bait_idx": 13,
+        "op": false,
+        "conf": 1.0,
+        "correct": true
+      },
+      {
+        "bait_idx": 14,
+        "op": false,
+        "conf": 1.0,
+        "correct": true
+      }
+    ]
+  },
+  "stability_details": {
+    "hrr_stability": 0.4127,
+    "stable": 26,
+    "total_tests": 63
+  },
+  "eq11_details": {
+    "HRR_eq11": 0.5142,
+    "stability": 0.7389,
+    "detection": 0.2895,
+    "n_preserve": 15,
+    "n_alter": 19
+  }
+}
