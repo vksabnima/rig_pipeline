@@ -1116,14 +1116,18 @@ the low-frequency fields (deadline, exception) the revised protocol
 increased the both-present sample size (from $n=3$ to 14 for
 deadline; $n=1$ to 7 for exception) and brought content alignment
 up sharply (to 0.786 and 0.857 respectively).
-We retain the Claude-derived gold standard as the working reference
-for the metrics in Table~\ref{tab:fullresults} but flag the
-inter-annotator noise as a material caveat: absolute RIF values
-should be read with $\sigma \sim 0.05$--$0.10$ uncertainty arising
-from annotation disagreement, even though inter-model RIF
-\emph{differences} (e.g., the Claude--GPT-4o gap and the
-Qwen3--GPT-4o Reg~BI gap) remain valid because all models are
-scored against the same noisy reference.
+We retain the human-validated Basel~III gold standard as the
+working reference for Basel~III RIF in Table~\ref{tab:fullresults}
+but flag the inter-annotator noise as a material caveat: absolute
+RIF values should be read with $\sigma \sim 0.05$--$0.10$
+uncertainty arising from annotation disagreement. The one
+significant inter-model RIF \emph{difference} we report --- the
+Basel~III Claude--GPT-4o gap of 0.052 with non-overlapping bootstrap
+CIs --- remains valid under this noise level because all four models
+are scored against identical reference content; the absence of
+significant inter-model gaps on Reg~BI and GDPR under independent
+gold (Section~\ref{sec:discussion}) is likewise robust to the same
+noise.
 
 \subsection{Frontier Model Fidelity and Statistical Significance}
 \label{sec:discussion}
@@ -1582,9 +1586,10 @@ and threshold but apply it to different text surfaces.
 We believe these artifacts materially affect the absolute level of
 Reg~BI RIF and the small differences between the two CAS conventions,
 but do not alter the principal qualitative findings (significant
-Claude~Sonnet--GPT-4o RIF gap, frontier-invariant above-threshold
-CAS precision, and Llama-3-8B template-uniformity inflation in OAL,
-CAS, and HRR-Stability).
+Claude~Sonnet--GPT-4o RIF gap on Basel~III, frontier-invariant
+above-threshold CAS precision among entropy-matched extractors,
+and Llama-3-8B template-uniformity inflation in OAL, CAS, and
+HRR-Stability).
 
 %% ================================================================
 %%  6. DISCUSSION
@@ -1628,14 +1633,28 @@ implication remains: similarity-based cross-document alignment is
 robust to frontier-model choice, lowering the deployment barrier for
 UCG construction.
 
-\textbf{The extraction--robustness tradeoff.}
-The inverse relationship between HRR-Stability and extraction richness
-reveals a property of structured extraction under adversarial
-pressure: richer extraction creates more attack surface.
-Systems optimized for extraction completeness should be paired with
-separate adversarial filtering layers rather than relying on extraction
-models for joint robustness---a design principle absent from current
-RegTech deployment guidance.
+\textbf{Output-entropy-driven stability inflation.}
+HRR-Stability varies by a factor of 2--3$\times$ across the four
+models (Claude~Sonnet 0.175, GPT-4o 0.203, Qwen3-235B 0.302,
+Llama-3-8B 0.413) and this variation does not track extraction
+richness: Llama-3-8B has simultaneously the highest OAL (0.820) and
+the highest HRR-Stability (0.413). The consistent explanation
+across our three regimes --- frontier closed models (high entropy,
+moderate stability), capable open MoE (Qwen3-235B, intermediate),
+dense small open (Llama-3-8B, low entropy, high stability), and the
+sparsity-collapsed pilot (Llama~3.2 in Appendix~\ref{app:llama32},
+near-zero output, also high stability) --- is that HRR-Stability is
+dominated by output-template entropy rather than by the
+richness--robustness tradeoff that composite-HRR framings
+implicitly assume. Systems optimised on composite HRR without
+RIF cross-checking will therefore prefer models whose outputs vary
+little with input (template-uniform or sparsity-collapsed) over
+models with richer, input-responsive outputs, even when the former
+have lower gold-aligned fidelity. We recommend that RegTech
+deployments decompose HRR into HRR-Detection (which is
+uninformative at 1.000 across all four models in our experiments)
+and HRR-Stability (interpretable only alongside RIF), and select
+models on RIF rather than composite HRR.
 
 \textbf{Cross-reference dependencies as the primary failure mode.}
 The 90\% concentration of extraction failures in cross-reference
@@ -1670,6 +1689,20 @@ because the 50-clause GDPR gold set was authored by Claude~Sonnet
 in an earlier pilot and scoring Claude~Sonnet against Claude-authored
 gold is self-evaluative; a fully independent GDPR gold pass of the
 same 50 clauses (and an expansion to all 498) remain future work.
+The Basel~III gold standard used for the main RIF results in
+Table~\ref{tab:fullresults} is Claude~Sonnet-pre-annotated and
+Claude~Sonnet-validated, then corrected and extended by a
+400-clause human pass; consequently Claude~Sonnet's Basel~III
+RIF advantage (gap 0.052 over GPT-4o, the paper's one
+statistically significant inter-model gap) is partly subject to a
+home-field effect that the human IAA work mitigates but does not
+fully eliminate. The 0.713 content-alignment figure on the 400
+human-reviewed clauses bounds this effect (the gold content
+reflects $\geq 0.713$ human agreement with Claude's original
+annotations across both-present fields); a fully
+human-originated Basel~III gold set would be the cleanest future
+validation, and we note the remaining possibility that the gap
+is partially Claude-gold-aligned rather than fidelity-driven.
 Inter-annotator $\kappa$ on the Basel~III sample is moderate-to-
 substantial (pooled 0.606; content alignment 0.713) but per-field
 $\kappa$ on the two highest-base-rate fields (subject, obligation)
@@ -1709,9 +1742,9 @@ document-dependent (Claude~$>$~GPT-4o on rule-dense Basel~III but not
 on Reg~BI or GDPR under independent human-validated gold);
 above-threshold cross-document alignment precision is near-invariant
 among frontier-class extractors; and composite extraction metrics
-systematically overstate smaller-model quality via template-following
-inflation unless cross-checked against independent gold-validated
-RIF.
+can systematically overstate smaller-model quality via
+template-uniformity inflation unless cross-checked against
+independent gold-validated RIF.
 
 These contributions establish an empirical foundation
 for LLM-assisted financial regulatory compliance extraction, providing
