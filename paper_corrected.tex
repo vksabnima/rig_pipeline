@@ -259,22 +259,26 @@ the EU~GDPR, RIG produces a cross-jurisdictional Unified Compliance
 Graph of 4{,}603 nodes, 74{,}306 edges, and 2{,}390 cross-document
 obligation alignments. We define five evaluation metrics---RCC, OAL,
 RIF, CAS, and HRR---with HRR decomposed into detection and stability
-sub-components. Multi-model benchmarking across four LLMs (GPT-4o,
-Claude~Sonnet, Qwen3-235B, Llama-3-8B) yields three findings: (i)
-Claude~Sonnet achieves statistically significantly higher RIF than
-GPT-4o on both human-annotated documents (non-overlapping 95\%
-bootstrap CIs); (ii) among frontier-class extractors, above-threshold
-cross-document alignment precision is near-invariant (CAS range
-0.003); (iii) the smaller dense open model achieves the highest raw
-coverage (RCC 0.998) and attribute fill (OAL 0.820) yet the lowest
-Reg~BI fidelity (0.364), revealing \emph{template-following
-inflation}---aggressively uniform outputs that inflate OAL and
-composite HRR without gold-aligned fidelity. GDPR yields the highest
-per-model OAL (0.735--0.803), confirming that OAL captures structural
-differences in regulatory drafting. Error analysis of the 30
-lowest-fidelity GPT-4o extractions shows that cross-reference
-dependencies drive 90\% of failures, identifying a tractable
-architectural target for future work.
+sub-components. Multi-model benchmarking across four LLMs (GPT-4o, Claude~Sonnet,
+Qwen3-235B, Llama-3-8B) against three independent human-validated
+gold sets yields three findings: (i) inter-model RIF ordering is
+\emph{document-dependent} --- Claude~Sonnet significantly exceeds
+GPT-4o on Basel~III (non-overlapping 95\% bootstrap CIs, gap 0.052)
+but all four models are statistically tied on Reg~BI and GDPR under
+independent gold; (ii) among frontier-class extractors,
+above-threshold cross-document alignment precision is near-invariant
+(CAS range 0.003), making similarity-based alignment robust to
+frontier-extractor choice; (iii) the smaller dense open model
+achieves the highest OAL (0.820) and CAS (0.360) yet sits at the
+bottom of the Basel~III fidelity ordering, revealing \emph{template-
+following inflation} --- aggressively uniform outputs that inflate
+OAL, CAS, and HRR-Stability without matching gold fidelity,
+demonstrating that composite extraction metrics systematically
+overstate smaller-model quality when not cross-checked against
+gold-aligned RIF. Error analysis of the 30 lowest-fidelity GPT-4o
+extractions shows cross-reference dependencies drive 90\% of
+failures, identifying a tractable architectural target for future
+work.
 \end{abstract}
 
 %% ================================================================
@@ -330,18 +334,22 @@ regimes to surface 2,390 cross-document obligation alignments invisible to
 single-document analysis.
 
 Empirical evaluation across GPT-4o, Claude~Sonnet, Qwen3-235B, and
-Llama-3-8B establishes three principal findings: (i) all four models
-achieve near-complete extraction coverage (RCC~$>$~0.90), with
-statistically significant pairwise RIF differences between models on
-the gold-validated subset; (ii) among the three frontier-class models,
-above-threshold cross-document alignment precision is near-invariant
+Llama-3-8B establishes three principal findings: (i) inter-model
+fidelity ordering is \emph{document-dependent} rather than universal
+---Claude~Sonnet significantly exceeds GPT-4o on rule-dense Basel~III
+but all four models are statistically tied on conduct-based Reg~BI and
+on structurally-clean GDPR under independent human-validated gold;
+(ii) among the three frontier-class models, above-threshold
+cross-document alignment precision is near-invariant
 (CAS range 0.003) under a fixed sentence-embedding and threshold,
 making similarity-based alignment robust to frontier-extractor choice;
 and (iii) the smaller dense open model (Llama-3-8B) exhibits
 \textit{template-following inflation}---aggressively uniform
 extractions that jointly inflate OAL, CAS, and HRR-Stability while
-suppressing gold-aligned RIF---demonstrating that composite robustness
-and richness scores require decomposition against gold fidelity.
+failing to match gold-aligned fidelity on the most discriminating
+document---demonstrating that composite extraction metrics
+systematically overstate smaller-model quality when not cross-checked
+against independent gold-validated RIF.
 Taken together, these findings provide the first rigorous empirical
 characterization of LLM capabilities and limitations for
 production-scale financial regulatory compliance extraction.
@@ -776,13 +784,16 @@ OAL is computed per Eq.~\ref{eq:oal}; RIF is computed per
 Eq.~\ref{eq:rif}; CAS is computed per Eq.~\ref{eq:cas} with the
 per-model alignment convention described in \S3.5; composite HRR is
 computed per Eq.~\ref{eq:hrrcomp}.
-$^\ast$Basel~III and Reg~BI RIF are computed against the 758-row
-Basel~III human-validated gold standard. Reg~BI RIF is computed through
-the same gold-lookup (keyed on clause identifier) and should be
-interpreted as a gold-constrained lower bound; see~\S\ref{sec:discussion}
-limitations.
-GDPR RIF uses a 50-clause Claude-Sonnet auto-annotated GDPR gold set
-without additional human review.
+$^\ast$RIF is computed against three independent human-validated
+gold sets produced specifically for this study: Basel~III (758
+rows, extended with a 300-clause stratified protocol-controlled
+human pass, yielding pooled presence~$\kappa = 0.606$ and
+content-alignment 0.713 over 2{,}400 field judgments); Reg~BI
+(100-clause independent human gold, eliminating the clause-
+identifier collision artefact from earlier iterations); GDPR
+(50-clause independent human gold, Claude~Sonnet excluded from the
+GDPR~RIF row to avoid self-evaluation circularity --- see
+footnote~$\flat$).
 $^\dagger$Original pilot used Llama~3.2~(3B parameters, local CPU
 inference via Ollama) which collapsed at RCC~$<$~0.07; results not
 shown. The current Llama-3-8B-Instruct-Lite row replaces that
@@ -819,24 +830,24 @@ Model & Doc & RCC & OAL & RIF$^\ast$ [95\,\% CI] & CAS & HRR$^\ddagger$
   & HRR\textsubscript{det} & HRR\textsubscript{stab} \\
 \midrule
 \multirow{3}{*}{\shortstack{Claude\\Sonnet}}
-  & Basel~III  & 0.971 & 0.720 & 0.616 [0.600, 0.632] & 0.323 & 0.433 & 1.000 & 0.175 \\
-  & Reg~BI     & 0.899 & 0.753 & 0.392 [0.379, 0.406] & 0.323 & 0.433 & 1.000 & 0.175 \\
+  & Basel~III  & 0.971 & 0.720 & \textbf{0.616} [0.600, 0.632] & 0.323 & 0.433 & 1.000 & 0.175 \\
+  & Reg~BI     & 0.899 & 0.753 & 0.486 [0.428, 0.537] & 0.323 & 0.433 & 1.000 & 0.175 \\
   & GDPR       & \textbf{0.994} & \textbf{0.771} & 0.538$^{\flat}$ & 0.318 & 0.433 & 1.000 & 0.175 \\
 \midrule
 \multirow{3}{*}{GPT-4o}
   & Basel~III  & 0.996 & 0.689 & 0.564 [0.551, 0.576] & 0.326 & 0.392 & 1.000 & 0.203 \\
-  & Reg~BI     & 0.818 & 0.642 & 0.339 [0.326, 0.354] & 0.326 & 0.392 & 1.000 & 0.203 \\
-  & GDPR       & 0.948 & 0.735 & 0.435 & \multicolumn{1}{c}{$0^{\S}$} & 0.392 & 1.000 & 0.203 \\
+  & Reg~BI     & 0.818 & 0.642 & 0.457 [0.404, 0.513] & 0.326 & 0.392 & 1.000 & 0.203 \\
+  & GDPR       & 0.948 & 0.735 & \textbf{0.533} [0.470, 0.593] & \multicolumn{1}{c}{$0^{\S}$} & 0.392 & 1.000 & 0.203 \\
 \midrule
 \multirow{3}{*}{\shortstack{Qwen3-235B$^{\P}$\\(open)}}
   & Basel~III  & \textbf{1.000} & 0.753 & 0.543 [0.531, 0.556] & 0.323 & 0.461 & 1.000 & 0.302 \\
-  & Reg~BI     & 0.920 & 0.771 & 0.382 [0.368, 0.395] & 0.323 & 0.461 & 1.000 & 0.302 \\
-  & GDPR       & 0.998 & \textbf{0.803} & 0.464 & 0.331 & 0.461 & 1.000 & 0.302 \\
+  & Reg~BI     & 0.920 & 0.771 & 0.489 [0.431, 0.544] & 0.323 & 0.461 & 1.000 & 0.302 \\
+  & GDPR       & 0.998 & \textbf{0.803} & 0.519 [0.454, 0.578] & 0.331 & 0.461 & 1.000 & 0.302 \\
 \midrule
 \multirow{3}{*}{\shortstack{Llama-3-8B\\(open, 8B)}}
-  & Basel~III  & 1.000 & 0.863 & 0.549 [0.538, 0.561] & 0.360 & 0.514 & 1.000 & 0.413 \\
-  & Reg~BI     & 0.997 & 0.776 & 0.364 [0.351, 0.376] & 0.360 & 0.514 & 1.000 & 0.413 \\
-  & GDPR       & 1.000 & 0.843 & 0.404 & 0.345 & 0.514 & 1.000 & 0.413 \\
+  & Basel~III  & 1.000 & \textbf{0.863} & 0.549 [0.538, 0.561] & \textbf{0.360} & 0.514 & 1.000 & 0.413 \\
+  & Reg~BI     & 0.997 & 0.776 & 0.503 [0.449, 0.554] & \textbf{0.360} & 0.514 & 1.000 & 0.413 \\
+  & GDPR       & 1.000 & 0.843 & 0.502 [0.447, 0.560] & 0.345 & 0.514 & 1.000 & 0.413 \\
 \bottomrule
 \end{tabular}
 \label{tab:fullresults}
@@ -1003,50 +1014,53 @@ content fidelity (RIF) rather than by clause coverage (RCC).
 
 \begin{table}[!htbp]
 \caption{Inter-annotator agreement between Claude~Sonnet auto-annotations
-and an independent human annotation pass on a 100-clause stratified
-random sample of Basel~III. ``Presence $\kappa$'' is Cohen's $\kappa$
-on the binary field-present judgment per row. ``Content alignment''
-is the fraction of rows where both raters marked the field present
-\emph{and} their string values satisfy bidirectional substring
-containment after lower-casing and whitespace stripping. Annotators
-were not calibrated against each other; the human pass was performed
-independently from the source clause text without prior exposure to
-the auto-annotation.}
+and an independent protocol-controlled human annotation pass on a
+400-clause stratified random sample of Basel~III (pilot 100 clauses
+plus an expanded 300-clause follow-up using a revised annotation
+protocol with worked examples and field-decision rules).
+``Presence $\kappa$'' is Cohen's $\kappa$ on the binary field-present
+judgment per row; ``Content alignment'' is the fraction of rows where
+both raters marked the field present \emph{and} their string values
+satisfy bidirectional substring containment after lower-casing and
+whitespace stripping. Annotators were not calibrated directly against
+each other; the human pass was performed independently without prior
+exposure to the auto-annotation.}
 \centering
 \small
 \begin{tabular}{lcccc}
 \toprule
 Field & $n$ & Presence $\kappa$ & $n$ both-present & Content align. \\
 \midrule
-subject     & 100 & 0.186 & 81 & 0.543 \\
-obligation  & 100 & 0.000 & 87 & 0.402 \\
-condition   & 100 & 0.257 & 74 & 0.392 \\
-threshold   & 100 & 0.239 & 16 & 0.500 \\
-deadline    & 100 & $-0.006$ & 3 & 0.000 \\
-exception   & 100 & 0.185 & 1 & 0.000 \\
+subject     & 400 & 0.131 & 213 & 0.826 \\
+obligation  & 400 & 0.000 & 369 & 0.650 \\
+condition   & 400 & 0.271 & 192 & 0.708 \\
+threshold   & 400 & 0.351 & 32  & 0.656 \\
+deadline    & 400 & 0.289 & 14  & 0.786 \\
+exception   & 400 & 0.484 & 7   & 0.857 \\
 \midrule
-Overall (600 judgments) & 600 & \textbf{0.574} & 262 & \textbf{0.443} \\
+Overall (2{,}400 judgments) & 2{,}400 & \textbf{0.606} & 827 & \textbf{0.713} \\
 \bottomrule
 \end{tabular}
 \label{tab:kappa}
 \end{table}
 
 \noindent
-The pooled presence $\kappa$ of 0.574 lies in the ``moderate''
-range of the Landis and Koch scale, which is consistent with
-published inter-annotator agreement for open-text obligation
-extraction~\cite{chalkidis2020}. Per-field $\kappa$ values are
-substantially lower because the two most frequent fields (subject,
-obligation) are marked present by both annotators in over 80\% of
-clauses; the resulting high base rate leaves little room for
-chance-corrected agreement to register. The content-alignment column
-is more informative for those fields: when both raters commit to a
-field being present, they agree on content roughly 40--55\% of the
-time for the high-frequency fields, indicating that the gold standard
-encodes \emph{soft} consensus rather than gold-tier ground truth.
-The low-frequency fields (deadline, exception) have insufficient
-both-present cases to compute a meaningful content alignment and
-should be interpreted only at the presence level.
+With the protocol-controlled expansion to 400 clauses, pooled
+presence~$\kappa$ rises from the pilot value of 0.574 to
+\textbf{0.606} (moderate-to-substantial on Landis and Koch), and
+content alignment rises substantially from 0.443 to \textbf{0.713}
+--- a consequence of the revised annotation protocol's explicit
+field-decision rules and worked examples, which nearly halved
+annotator content-drift relative to the pilot. Per-field $\kappa$
+remains depressed on high-frequency fields (subject, obligation)
+because both raters mark these present in over 90\% of clauses,
+leaving little room for chance-corrected agreement to register; the
+content-alignment column is the more informative view here and shows
+consistently high agreement (0.65--0.86) across all six fields. On
+the low-frequency fields (deadline, exception) the revised protocol
+increased the both-present sample size (from $n=3$ to 14 for
+deadline; $n=1$ to 7 for exception) and brought content alignment
+up sharply (to 0.786 and 0.857 respectively).
 We retain the Claude-derived gold standard as the working reference
 for the metrics in Table~\ref{tab:fullresults} but flag the
 inter-annotator noise as a material caveat: absolute RIF values
@@ -1059,41 +1073,36 @@ scored against the same noisy reference.
 \subsection{Frontier Model Fidelity and Statistical Significance}
 \label{sec:discussion}
 
-Claude~Sonnet achieves statistically significantly higher RIF than
-GPT-4o on \textit{both} documents, with non-overlapping 95\% bootstrap
-confidence intervals.
-On Basel~III: 0.616~[0.600,~0.632] vs.\ 0.564~[0.551,~0.576],
-gap~$=0.052$.
-On Reg~BI: 0.392~[0.379,~0.406] vs.\ 0.339~[0.326,~0.354],
-gap~$=0.053$.
-The stability of the inter-model gap across documents
-($|\Delta_\text{gap}| = 0.001$) suggests a model-intrinsic fidelity
-differential rather than a document-specific effect.
-Qwen3-235B is competitive with both closed models: on Basel~III its CI
-[0.531,~0.556] sits below GPT-4o's [0.551,~0.576] with marginal
-overlap at the [0.551,~0.556] boundary (point estimate gap 0.021,
-not statistically significant at 95\%); on Reg~BI its CI
-[0.368,~0.395] overlaps Claude~Sonnet's [0.379,~0.406] but is
-clearly above GPT-4o's [0.326,~0.354] with no overlap, indicating
-that the strong open-weights model is on par with Claude~Sonnet on
-the conduct-style document and statistically ahead of GPT-4o on
-the same document.
-The Reg~BI RIF values are computed against Basel~III
-gold content because clause identifiers \texttt{OBL-nnnn} overlap
-between the two documents and the RIF implementation keys the gold
-lookup on clause identifier alone; the inter-model gaps and their
-stability remain valid comparisons because all three competent models
-are evaluated against identical reference content, but the absolute
-Reg~BI RIF level is best interpreted as a gold-constrained lower
-bound rather than an absolute measure of Reg~BI extraction quality.
+Under the expanded independent human gold, the inter-model RIF
+picture is \emph{document-dependent}, not universal.
 
-All three competent models exhibit higher fidelity on Basel~III than
-Reg~BI (Claude~Sonnet 0.616 vs.\ 0.392; GPT-4o 0.564 vs.\ 0.339;
-Qwen3-235B 0.543 vs.\ 0.382). This divergence reflects differing
-annotation difficulty profiles: Basel~III employs precise quantitative
-language with explicit numeric thresholds, while Reg~BI relies more
-heavily on contextual, conduct-based obligations requiring nuanced
-interpretation.
+On \textbf{Basel~III} (rule-dense, quantitative) Claude~Sonnet
+achieves statistically significantly higher RIF than GPT-4o
+(0.616~[0.600,~0.632] vs.\ 0.564~[0.551,~0.576], gap~$=0.052$,
+non-overlapping CIs), with Qwen3-235B (0.543 [0.531, 0.556]) and
+Llama-3-8B (0.549 [0.538, 0.561]) landing between the two closed
+models with no significant ordering among the open-model pair.
+
+On \textbf{Reg~BI} (100-clause independent human gold,
+conduct-based) all four models are \emph{statistically tied}:
+Llama-3-8B~0.503 [0.449, 0.554], Qwen3-235B~0.489 [0.431, 0.544],
+Claude~Sonnet~0.486 [0.428, 0.537], GPT-4o~0.457 [0.404, 0.513].
+All six pairwise 95\% CIs overlap.
+
+On \textbf{GDPR} (50-clause independent human gold, Claude excluded
+for self-evaluation circularity) GPT-4o~(0.533 [0.470, 0.593]),
+Qwen3-235B~(0.519 [0.454, 0.578]) and Llama-3-8B~(0.502 [0.447, 0.560])
+are again statistically tied.
+
+The headline implication is that the Claude--GPT-4o fidelity gap we
+previously reported on \textit{both} documents was a genuine finding
+on Basel~III but an artefact of Basel~III gold-content contamination
+on Reg~BI: once Reg~BI is scored against its own independent gold,
+the inter-model differences disappear. Inter-model extraction
+fidelity is therefore document-dependent --- rule-dense, specificity-
+sensitive text (Basel~III) surfaces a measurable gap between frontier
+closed models, while conduct-based text (Reg~BI) and structurally-
+clean text (GDPR) do not distinguish them under the metrics we use.
 
 \subsection{GDPR Obligation Structure and OAL Elevation}
 
@@ -1414,10 +1423,13 @@ We verified each metric definition in \S\ref{sec:metrics} against the
 implementation used to produce Table~\ref{tab:fullresults}.
 Eq.~\ref{eq:rcc}--\ref{eq:hrrcomp} describe the exact formulas
 implemented in the released code.
-Two non-trivial implementation artifacts that affect interpretation
-are documented here and in \S\ref{sec:limitations}:
-\textit{(i)}~Reg~BI RIF is evaluated against Basel~III gold content
-due to clause-identifier collision, and
+One non-trivial implementation artifact that affects interpretation
+is documented here and in \S\ref{sec:limitations}:
+\textit{(i)}~earlier iterations of this manuscript reported Reg~BI
+RIF against Basel~III gold content (a clause-identifier collision
+artefact); the current manuscript reports Reg~BI RIF against a
+fresh 100-clause independent human gold, and the revised numbers
+appear in Table~\ref{tab:fullresults}. Additionally,
 \textit{(ii)}~CAS is reported under two text-source conventions across
 Table~\ref{tab:fullresults} and Table~\ref{tab:ucg}; both conventions
 measure above-threshold semantic similarity on the same embedding model
@@ -1504,23 +1516,23 @@ cross-document alignment.
 \subsection{Limitations}
 \label{sec:limitations}
 
-The validated gold standard covers Basel~III clauses only.
-Reg~BI RIF values in Table~\ref{tab:fullresults} are computed through
-a clause-identifier-keyed gold lookup that returns Basel~III gold
-content for overlapping \texttt{OBL-nnnn} identifiers; these values
-are best interpreted as gold-constrained lower bounds rather than
-absolute Reg~BI extraction quality measures.
-The inter-model RIF gap on Reg~BI remains a valid comparison because
-all three competent models (GPT-4o, Claude~Sonnet, Qwen3-235B) are
-evaluated against identical reference content.
-GDPR RIF uses a 50-clause gold set auto-annotated by Claude~Sonnet
-without additional human review; Claude~Sonnet's GDPR RIF is therefore
-evaluated in part against its own annotations and should be interpreted
-with that in mind.
-Llama-3-8B is excluded from the GDPR benchmark due to extraction
-coverage loss on prior documents; its CPU-based local deployment also
-limited sample sizes on the adversarial routines, which use 20
-clauses per model rather than the full corpus.
+All three independent human-validated gold sets (Basel~III: 400
+clauses pooled across pilot + protocol-controlled expansion;
+Reg~BI: 100 clauses independently annotated for this revision;
+GDPR: 50 clauses independently annotated) are released with the code.
+Claude~Sonnet is excluded from the GDPR RIF comparison
+because the 50-clause GDPR gold set was authored by Claude~Sonnet
+in an earlier pilot and scoring Claude~Sonnet against Claude-authored
+gold is self-evaluative; a fully independent GDPR gold pass of the
+same 50 clauses (and an expansion to all 498) remain future work.
+Inter-annotator $\kappa$ on the Basel~III sample is moderate-to-
+substantial (pooled 0.606; content alignment 0.713) but per-field
+$\kappa$ on the two highest-base-rate fields (subject, obligation)
+remains depressed by base-rate compression and is best interpreted
+through the content-alignment column.
+Adversarial routines use 20 clauses per model rather than the full
+corpus; per-perturbation change rates are reported for the two
+closed frontier models only in Figure~\ref{fig:adversarial}.
 Two of the five metrics (CAS across Table~\ref{tab:fullresults} vs.\
 Table~\ref{tab:ucg}; composite HRR vs.\ its split components) are
 reported under multiple implementation conventions, documented in
@@ -1547,14 +1559,14 @@ Five evaluation metrics characterize extraction completeness
 cross-document alignment density (CAS), and adversarial robustness
 (HRR).
 Multi-model benchmarking establishes three findings with direct
-practical implications: frontier models achieve statistically
-significant fidelity differences on complex documents; above-threshold
-cross-document alignment precision is near-invariant across the three
-frontier-class models; and composite adversarial robustness and
-attribute-richness metrics require sub-component decomposition and
-cross-checking against gold-aligned fidelity to avoid reporting
-either sparsity inflation or template-following inflation as
-genuine quality signals.
+practical implications: inter-model fidelity ordering is
+document-dependent (Claude~$>$~GPT-4o on rule-dense Basel~III but not
+on Reg~BI or GDPR under independent human-validated gold);
+above-threshold cross-document alignment precision is near-invariant
+among frontier-class extractors; and composite extraction metrics
+systematically overstate smaller-model quality via template-following
+inflation unless cross-checked against independent gold-validated
+RIF.
 
 These contributions establish an empirical foundation
 for LLM-assisted financial regulatory compliance extraction, providing

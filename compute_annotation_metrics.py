@@ -61,8 +61,17 @@ def cohen_kappa_binary(pairs):
     return (po - pe) / (1 - pe)
 
 
+def is_completed(r):
+    """A row is completed if EITHER any human_* field is filled, OR the
+    annotator marked it as non-obligation (all human_* blank, notes filled)."""
+    if any(is_present(r.get(h)) for h in HUMAN_FIELDS):
+        return True
+    note = (r.get("notes") or "").strip()
+    return bool(note)
+
+
 def count_filled(rows):
-    return sum(1 for r in rows if any(is_present(r.get(h)) for h in HUMAN_FIELDS))
+    return sum(1 for r in rows if is_completed(r))
 
 
 # ── 1. Combined kappa on 100 + 300 = 400 clauses ───────────────────────────
@@ -152,12 +161,15 @@ def rif_single(t, text, gold):
 
 
 def human_to_gold_lookup(rows):
-    """Convert filled human_* columns into gold_standard-shaped lookup with *_gt keys."""
+    """Convert completed rows into gold_standard-shaped lookup with *_gt keys.
+    Rows that the annotator marked as non-obligation (all human_* blank but
+    notes filled) are included as empty-gold rows, which falls through to
+    the non-gold RIF branch when scored."""
     g = {}
     for r in rows:
-        cid = r.get("clause_id", "")
-        if not any(is_present(r.get(h)) for h in HUMAN_FIELDS):
+        if not is_completed(r):
             continue
+        cid = r.get("clause_id", "")
         g[cid] = {f"{f}_gt": r.get(f"human_{f}", "") for f in FIELDS}
     return g
 
