@@ -265,17 +265,18 @@ gold sets yields three findings: (i) inter-model RIF ordering is
 \emph{document-dependent} --- Claude~Sonnet significantly exceeds
 GPT-4o on Basel~III (non-overlapping 95\% bootstrap CIs, gap 0.052)
 but all four models are statistically tied on Reg~BI and GDPR under
-independent gold; (ii) among frontier-class extractors,
-above-threshold cross-document alignment precision is near-invariant
-(CAS range 0.003), making similarity-based alignment robust to
-frontier-extractor choice; (iii) the smaller dense open model
-achieves the highest OAL (0.820) and CAS (0.360) yet sits at the
-bottom of the Basel~III fidelity ordering, revealing \emph{template-
-following inflation} --- aggressively uniform outputs that inflate
-OAL, CAS, and HRR-Stability without matching gold fidelity,
-demonstrating that composite extraction metrics systematically
-overstate smaller-model quality when not cross-checked against
-gold-aligned RIF. Error analysis of the 30 lowest-fidelity GPT-4o
+independent gold; (ii) among frontier-class extractors of comparable
+output entropy, above-threshold cross-document alignment precision
+is near-invariant (CAS range 0.003), making similarity-based
+alignment robust to frontier-extractor choice; lower-entropy
+extractors inflate CAS through template-driven embedding-space
+clustering; (iii) the smaller dense open model jointly maximises
+three output-entropy-sensitive metrics (OAL 0.820, CAS 0.360,
+HRR-Stability 0.413) while landing mid-pack on gold-aligned RIF,
+revealing \emph{template-uniformity inflation} --- a failure mode of
+composite extraction metrics in which uniform, high-coverage JSON
+outputs inflate every unsupervised quality signal without
+corresponding fidelity gains. Error analysis of the 30 lowest-fidelity GPT-4o
 extractions shows cross-reference dependencies drive 90\% of
 failures, identifying a tractable architectural target for future
 work.
@@ -337,19 +338,19 @@ Empirical evaluation across GPT-4o, Claude~Sonnet, Qwen3-235B, and
 Llama-3-8B establishes three principal findings: (i) inter-model
 fidelity ordering is \emph{document-dependent} rather than universal
 ---Claude~Sonnet significantly exceeds GPT-4o on rule-dense Basel~III
-but all four models are statistically tied on conduct-based Reg~BI and
-on structurally-clean GDPR under independent human-validated gold;
-(ii) among the three frontier-class models, above-threshold
-cross-document alignment precision is near-invariant
-(CAS range 0.003) under a fixed sentence-embedding and threshold,
-making similarity-based alignment robust to frontier-extractor choice;
-and (iii) the smaller dense open model (Llama-3-8B) exhibits
-\textit{template-following inflation}---aggressively uniform
-extractions that jointly inflate OAL, CAS, and HRR-Stability while
-failing to match gold-aligned fidelity on the most discriminating
-document---demonstrating that composite extraction metrics
-systematically overstate smaller-model quality when not cross-checked
-against independent gold-validated RIF.
+but all four models are statistically tied on conduct-based Reg~BI
+and on structurally-clean GDPR under independent human-validated
+gold; (ii) among frontier-class models of comparable output entropy,
+above-threshold cross-document alignment precision is near-invariant
+(CAS range 0.003) under a fixed sentence-embedding and threshold;
+lower-entropy extractors produce tighter embedding-space clustering
+and therefore inflate CAS; and (iii) the smaller dense open model
+(Llama-3-8B) exhibits \textit{template-uniformity inflation}---
+jointly maximising three output-entropy-sensitive metrics (OAL, CAS,
+HRR-Stability) while landing mid-pack on gold-aligned RIF---
+demonstrating that unsupervised composite extraction metrics can be
+driven by low output entropy rather than by genuine extraction
+quality unless cross-checked against independent gold-validated RIF.
 Taken together, these findings provide the first rigorous empirical
 characterization of LLM capabilities and limitations for
 production-scale financial regulatory compliance extraction.
@@ -969,45 +970,48 @@ from regulatory signal-word patterns alone.
 
 \begin{table}[!htbp]
 \caption{Rule-based baseline vs.\ LLM extraction across the three
-documents (RCC, OAL, RIF as defined in \S\ref{sec:metrics}).
-The baseline approaches LLM RCC because most obligation clauses
-contain a recognisable trigger word; it falls substantially behind on
-OAL (the LLMs recover three or more fields per clause $\sim 2$--$3\times$
-more often) and on RIF (LLM extractions align more faithfully with
-the gold tuple).}
+documents (RCC, OAL, RIF as defined in \S\ref{sec:metrics}),
+re-rendered against the three independent human-validated gold sets
+used throughout this study. All four LLMs (two closed frontier and
+two open-weights) are reported.
+$^{\flat}$Claude~Sonnet GDPR RIF is a self-evaluation against a
+Claude-authored gold set (see Table~\ref{tab:fullresults}); shown
+here for completeness.}
 \centering
-\setlength{\tabcolsep}{3pt}
+\setlength{\tabcolsep}{2.5pt}
 \scriptsize
-\begin{tabular}{l|ccc|ccc|ccc|ccc}
+\begin{tabular}{l|ccc|ccc|ccc|ccc|ccc}
 \toprule
  & \multicolumn{3}{c|}{Baseline (regex)} &
    \multicolumn{3}{c|}{GPT-4o} &
    \multicolumn{3}{c|}{Claude Sonnet} &
-   \multicolumn{3}{c}{Qwen3-235B (open)} \\
-Doc & RCC & OAL & RIF & RCC & OAL & RIF & RCC & OAL & RIF & RCC & OAL & RIF \\
+   \multicolumn{3}{c|}{Qwen3-235B} &
+   \multicolumn{3}{c}{Llama-3-8B} \\
+Doc & RCC & OAL & RIF & RCC & OAL & RIF & RCC & OAL & RIF & RCC & OAL & RIF & RCC & OAL & RIF \\
 \midrule
-Basel~III & 0.974 & 0.249 & 0.405 & 0.996 & 0.689 & 0.564 & 0.971 & 0.720 & 0.616 & 1.000 & 0.753 & 0.543 \\
-Reg~BI    & 0.912 & 0.253 & 0.229 & 0.818 & 0.642 & 0.339 & 0.899 & 0.753 & 0.392 & 0.920 & 0.771 & 0.382 \\
-GDPR      & 0.982 & 0.460 & 0.369 & 0.948 & 0.735 & 0.435 & 0.994 & 0.771 & 0.538 & 0.998 & 0.803 & 0.464 \\
+Basel~III & 0.974 & 0.249 & 0.405 & 0.996 & 0.689 & 0.564 & 0.971 & 0.720 & \textbf{0.616} & 1.000 & 0.753 & 0.543 & 1.000 & 0.863 & 0.549 \\
+Reg~BI    & 0.912 & 0.253 & 0.316 & 0.818 & 0.642 & 0.457 & 0.899 & 0.753 & 0.486 & 0.920 & 0.771 & 0.489 & 0.997 & 0.776 & \textbf{0.503} \\
+GDPR      & 0.982 & 0.460 & 0.424 & 0.948 & 0.735 & \textbf{0.533} & 0.994 & 0.771 & 0.538$^{\flat}$ & 0.998 & 0.803 & 0.519 & 1.000 & 0.843 & 0.502 \\
 \bottomrule
 \end{tabular}
 \label{tab:baseline}
 \end{table}
 
 \noindent
-The pattern is consistent across all three documents and three
+The pattern is consistent across all three documents and all four
 LLMs, and informative about \emph{where} LLMs add value. RCC
 differences are small (the baseline finds at least one field in
 $> 90\%$ of clauses simply by matching ``shall''/``must''/``required''
 patterns), so coverage alone does not justify LLM use. The OAL gap
-is large and consistent ($+0.27$ to $+0.52$ absolute across docs and
-the three competent LLMs): LLMs reliably populate three or more
-fields per clause whereas the baseline averages closer to two.
-The RIF gap is $+0.16$ to $+0.21$ for Claude~Sonnet and
-$+0.10$ to $+0.15$ for Qwen3-235B (smaller for GPT-4o on Reg~BI),
-confirming that LLM-extracted field values are more faithful to
-gold content than regex-captured spans even when the regex correctly
-identifies that a field exists. Taken together,
+is large and consistent ($+0.27$ to $+0.61$ absolute across docs and
+all four LLMs): LLMs reliably populate three or more fields per
+clause whereas the baseline averages closer to two. The RIF gap
+over the regex baseline is $+0.17$ to $+0.21$ for Claude~Sonnet,
+$+0.11$ to $+0.16$ for GPT-4o, $+0.10$ to $+0.17$ for Qwen3-235B,
+and $+0.08$ to $+0.19$ for Llama-3-8B (excluding the self-evaluation
+Claude~Sonnet GDPR cell), confirming that LLM-extracted field values
+are substantially more faithful to gold content than regex-captured
+spans even when the regex correctly identifies that a field exists. Taken together,
 Table~\ref{tab:baseline} establishes that the LLM-extraction
 investment is justified primarily by attribute richness (OAL) and
 content fidelity (RIF) rather than by clause coverage (RCC).
@@ -1052,6 +1056,18 @@ content alignment rises substantially from 0.443 to \textbf{0.713}
 --- a consequence of the revised annotation protocol's explicit
 field-decision rules and worked examples, which nearly halved
 annotator content-drift relative to the pilot.
+The per-field $\kappa$ of 0.000 on the \textit{obligation} row
+reflects a known chance-correction degeneracy: when both raters
+mark a field present in over 90\% of cases (here both annotators
+marked \textit{obligation} present on $> 92\%$ of clauses), the
+expected-agreement term in Cohen's $\kappa$ approaches the observed-
+agreement term, driving chance-corrected $\kappa$ toward zero even
+at very high raw agreement (0.923 raw agreement on \textit{obligation},
+0.65--0.73 content alignment). For the highest-base-rate fields the
+content-alignment column is the informative metric; for the
+lower-base-rate fields both $\kappa$ and content alignment are
+informative and both improved substantially on the protocol-controlled
+expansion (Table~\ref{tab:protocol_effect}).
 Table~\ref{tab:protocol_effect} isolates the protocol effect by
 computing per-field $\kappa$ and content alignment separately on
 the 100-clause pilot (ad-hoc protocol) and the 300-clause
@@ -1237,51 +1253,71 @@ obligation language are maximally amenable to structured LLM
 extraction by capable models.
 
 \subsection{Open-Weights Models: Qwen3 Matches Frontier;
-Llama-3-8B Shows Template-Following Inflation}
+Llama-3-8B Exhibits Template-Uniformity}
 \label{sec:openweight}
 
-The four-model comparison separates two distinct behaviours in
-open-weights extraction.
+The four-model comparison separates two distinct behavioural
+profiles in open-weights extraction.
 
 \emph{Qwen3-235B-A22B-Instruct}---an open-weights Mixture-of-Experts
 model with 22B active parameters---achieves extraction quality
 comparable to the closed frontier models on every metric: RCC
 (1.000~/~0.920~/~0.998 across the three documents), OAL
-(0.753~/~0.771~/~0.803), and RIF (0.543~/~0.382~/~0.464).
-On Basel~III Qwen3 ties Llama-3-8B for highest RCC; on GDPR it sets
-the highest OAL among closed-plus-MoE models.
+(0.753~/~0.771~/~0.803), and RIF against independent human gold
+(0.543~/~0.489~/~0.519). On Basel~III Qwen3 ties Llama-3-8B for the
+highest RCC; on GDPR it sets the highest OAL among all four models.
 This refutes any narrative that closed-weights models hold a
 categorical extraction advantage at the frontier tier.
 
 \emph{Llama-3-8B-Instruct-Lite}---a dense 8B open model served on
 identical Together.ai serverless infrastructure---produces a
-strikingly different behavioural profile.
-RCC is essentially perfect (0.998 average), OAL is the highest of any
-model benchmarked (0.820 average, versus 0.737 for the next-highest
-Claude~Sonnet), yet Reg~BI RIF is the lowest among competent
-models (0.364, versus 0.382 for GPT-4o).
-HRR-Stability is also the highest (0.413 versus 0.175--0.302 for the
-three frontier models), and the Eq.~\ref{eq:hrrcomp} composite HRR is
-the highest (0.514 vs.\ 0.392--0.461 for frontier models).
-This combination---simultaneously highest OAL, highest HRR-Stability,
-highest CAS, and lowest Reg~BI RIF---is not \emph{sparsity} inflation
-but rather what we term \emph{template-following inflation}: the small
-dense open model produces aggressively uniform, high-coverage JSON
-outputs that cluster tightly in both embedding space (inflating CAS
-and OAL) and across perturbed inputs (inflating HRR-Stability),
-without the gold-aligned fidelity that would indicate the content
-actually matches the clause it was extracted from.
-The pilot experiment with an under-configured Llama~3.2 (3B, local CPU
-inference, extraction sampling) is reported in Appendix~\ref{app:llama32}
-and is consistent with this reading at the extreme sparsity end.
+strikingly different behavioural profile driven by low output
+entropy rather than by a fidelity deficit. RCC is essentially
+perfect (0.998 average), OAL is the highest of any model
+benchmarked (0.820 average versus 0.737 for the next-highest
+Claude~Sonnet), and Reg~BI RIF is in fact the highest point
+estimate (0.503) among the four models, though statistically tied
+with the other three under the 100-clause independent Reg~BI gold
+(Table~\ref{tab:fullresults}). On Basel~III Llama-3-8B sits in the
+GPT-4o / Qwen3 / Llama-3-8B statistical cluster (0.549 [0.538,
+0.561]) and is significantly below Claude~Sonnet (gap 0.067,
+non-overlapping CIs). On GDPR it is the lowest of the three
+compared point estimates (0.502) but within overlapping CIs of
+GPT-4o (0.533) and Qwen3 (0.519).
 
-The practical implication is that \emph{composite HRR and OAL are
-both susceptible to inflation from different directions}---sparsity
-at one extreme, template-following at the other---and neither can
-be interpreted as robustness or richness without cross-checking
-against gold-aligned RIF. We recommend reporting RCC, OAL, and RIF
-jointly, and decomposing HRR into HRR-Detection and HRR-Stability,
-whenever composite scores are used.
+The interesting observation is not that Llama-3-8B has inflated
+unsupervised metrics \emph{without} supporting fidelity --- fidelity
+is competitive. Rather, Llama-3-8B jointly maximises \emph{three
+output-entropy-sensitive metrics} (OAL 0.820, CAS 0.360,
+HRR-Stability 0.413) while sitting mid-pack or lower on RIF. We
+interpret this pattern as \emph{template-uniformity inflation}: the
+model produces highly uniform, high-coverage JSON outputs whose
+field values (a) always fill most tuple positions (inflating OAL),
+(b) cluster tightly in sentence-embedding space because they share
+lexical templates (inflating CAS through higher above-threshold
+pair density --- 6{,}253 Basel~III$\leftrightarrow$Reg~BI pairs
+versus $\approx 1{,}600$ for the frontier models), and (c) change
+less under adversarial perturbation because the output is more
+strongly anchored to the model's template prior than to the input
+text (inflating HRR-Stability). The HRR-Stability value of 0.413 is
+illustrative: roughly 2.4$\times$ Claude~Sonnet's (0.175) and
+2.0$\times$ GPT-4o's (0.203) on 20-clause adversarial samples drawn
+under the same random seed and five perturbation types, but this
+stability is template-anchored, not fidelity-anchored.
+The pilot experiment with an under-configured Llama~3.2 (3B, local
+CPU inference, extraction sampling) is reported in
+Appendix~\ref{app:llama32} and shows the opposite regime --- sparse
+extraction also inflates HRR-Stability, but via having too little
+content to perturb rather than via template uniformity.
+
+The practical implication is that high values of OAL, CAS, and
+HRR-Stability do not, on their own, certify extraction quality
+above frontier extractors. They can arise from genuine thoroughness
+(Basel~III Qwen3 OAL 0.753, RIF 0.543) or from lower output
+entropy (Basel~III Llama-3-8B OAL 0.863, RIF 0.549). We recommend
+reporting RCC, OAL, and RIF jointly, and decomposing HRR into
+HRR-Detection and HRR-Stability, whenever composite scores are
+used for model selection.
 
 \subsection{Cross-Document Alignment and the UCG}
 
@@ -1547,8 +1583,8 @@ We believe these artifacts materially affect the absolute level of
 Reg~BI RIF and the small differences between the two CAS conventions,
 but do not alter the principal qualitative findings (significant
 Claude~Sonnet--GPT-4o RIF gap, frontier-invariant above-threshold
-CAS precision, and Llama-3-8B template-following inflation in OAL
-and HRR-Stability).
+CAS precision, and Llama-3-8B template-uniformity inflation in OAL,
+CAS, and HRR-Stability).
 
 %% ================================================================
 %%  6. DISCUSSION
@@ -1732,7 +1768,7 @@ Llama-3-8B-Instruct-Lite served on identical Together.ai serverless
 infrastructure as Qwen3, which avoids the CPU latency and sampling
 constraint and gives a fair test of a capable small open model.
 The pilot is reported here to document the inflation pattern at the
-sparsity extreme; the main-text \emph{template-following inflation}
+sparsity extreme; the main-text \emph{template-uniformity inflation}
 finding (§5.5) is the opposite regime with the same warning against
 interpreting composite robustness scores without gold-aligned RIF.
 
